@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:airport:RunwayOneHalfDistanceRemainingSign;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Runway One-Half Distance Remaining Sign"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:SignageEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

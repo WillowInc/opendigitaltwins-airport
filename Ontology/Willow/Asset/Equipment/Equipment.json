@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:airport:Equipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:Asset;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
