@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:airport:Asset;1",
+  "@id": "dtmi:com:willowinc:airport:Structure;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Asset"
+    "en": "Structure"
   },
   "extends" : [
 
@@ -22,14 +22,6 @@
         "en": "installed by"
       },
       "name": "installedBy",
-      "target": "dtmi:com:willowinc:airport:Agent;1"
-    },
-    {
-      "@type": "Relationship",
-      "displayName": {
-        "en": "manufactured by"
-      },
-      "name": "manufacturedBy",
       "target": "dtmi:com:willowinc:airport:Agent;1"
     },
     {
@@ -104,7 +96,7 @@
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:com:willowinc:airport:Asset;1"
+      "target": "dtmi:com:willowinc:airport:Structure;1"
     },
     {
       "@type": "Relationship",
@@ -171,16 +163,6 @@
           "schema": "string"
         }
       }
-    },
-    {
-      "@type": "Property",
-      "name": "faaType",
-      "displayName": {
-        "en": "FAA Type"
-      },
-      "writable": true,
-      "schema": "string",
-      "comment": "FAA Type code, i.e. L-852A"
     },
     {
       "@type": "Property",
@@ -257,56 +239,11 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "IP address"
-      },
-      "name": "IPAddress",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "MAC address"
-      },
-      "name": "MACAddress",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "model number"
-      },
-      "name": "modelNumber",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
         "en": "physical tag number"
       },
       "name": "physicalTagNumber",
       "schema": "string",
       "writable": true
-    },
-    {
-      "@type": "Property",
-      "displayName": {
-        "en": "serial number"
-      },
-      "name": "serialNumber",
-      "schema": "string",
-      "writable": true
-    },
-    {
-      "@type": "Property",
-      "name": "software",
-      "displayName": {
-        "en": "Software"
-      },
-      "writable": true,
-      "schema": "string"
     },
     {
       "@type": "Property",

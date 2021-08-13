@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:airport:TaxiwayPavementMarking;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Taxiway Pavement Marking"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:PavementMarking;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
