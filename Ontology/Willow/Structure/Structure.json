@@ -74,7 +74,7 @@
         "en": "has part"
       },
       "name": "hasPart",
-      "target": "dtmi:com:willowinc:airport:Asset;1"
+      "target": "dtmi:com:willowinc:airport:Structure;1"
     },
     {
       "@type": "Relationship",
