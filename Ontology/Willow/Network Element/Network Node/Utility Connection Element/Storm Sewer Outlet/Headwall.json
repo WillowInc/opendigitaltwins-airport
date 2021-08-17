@@ -1,0 +1,12 @@
+{
+  "@id": "dtmi:com:willowinc:airport:Headwall;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Headwall"
+  },
+  "extends": "dtmi:com:willowinc:airport:StormSewerOutlet;1",
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

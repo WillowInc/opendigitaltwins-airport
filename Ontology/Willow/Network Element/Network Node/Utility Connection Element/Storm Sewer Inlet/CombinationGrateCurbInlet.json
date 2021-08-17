@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:airport:CombinationGrateCurbInlet;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Combination Grate-Curb Inlet"
+  },
+  "extends": [
+    "dtmi:com:willowinc:airport:GrateInlet;1",
+    "dtmi:com:willowinc:airport:CurbInlet;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
