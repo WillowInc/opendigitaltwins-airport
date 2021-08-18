@@ -1,14 +1,14 @@
 {
-  "@id": "dtmi:com:willowinc:airport:DuctBank;1",
+  "@id": "dtmi:com:willowinc:airport:Structure;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Duct Bank"
+    "en": "Structure"
   },
   "extends" : [
-    "dtmi:com:willowinc:airport:NetworkEdge;1"
+    "dtmi:com:willowinc:airport:Construction;1"
   ],
   "contents": [
-    
+
   ],
   "@context": "dtmi:dtdl:context;2"
 }

@@ -5,7 +5,7 @@
     "en": "Utility Pipe"
   },
   "extends" : [
-    "dtmi:com:willowinc:airport:NetworkEdge;1"
+    "dtmi:com:willowinc:airport:UtilityNetworkEdge;1"
   ],
   "contents": [
     {
