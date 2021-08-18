@@ -1,8 +1,8 @@
 {
-  "@id": "dtmi:com:willowinc:airport:Structure;1",
+  "@id": "dtmi:com:willowinc:airport:Construction;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Structure"
+    "en": "Construction"
   },
   "extends" : [
 
@@ -74,7 +74,7 @@
         "en": "has part"
       },
       "name": "hasPart",
-      "target": "dtmi:com:willowinc:airport:Structure;1"
+      "target": "dtmi:com:willowinc:airport:Construction;1"
     },
     {
       "@type": "Relationship",
@@ -96,7 +96,7 @@
         "en": "is part of"
       },
       "name": "isPartOf",
-      "target": "dtmi:com:willowinc:airport:Structure;1"
+      "target": "dtmi:com:willowinc:airport:Construction;1"
     },
     {
       "@type": "Relationship",
@@ -126,7 +126,7 @@
       },
       "writable": true,
       "schema": "string",
-      "comment": "Reference of the land (i.e. airport) to which the asset belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding airport twins."
+      "comment": "Reference of the land (i.e. campus, site, airport) to which the twin belongs. A Customer has one or many Lands. Land is considered the top-level entity for binding construction twins."
     },
     {
       "@type": "Property",
@@ -286,7 +286,7 @@
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
+          "schema": "string"
         }
       }
     }

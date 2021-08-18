@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:airport:NetworkEdge;1",
+  "@id": "dtmi:com:willowinc:airport:UtilityNetworkEdge;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Network Edge"
+    "en": "Utility Network Edge"
   },
   "extends" : [
-    "dtmi:com:willowinc:airport:NetworkElement;1"
+    "dtmi:com:willowinc:airport:UtilityNetworkElement;1"
   ],
   "contents": [
     {
@@ -14,7 +14,7 @@
       "displayName": {
         "en": "starts at"
       },
-      "target": "dtmi:com:willowinc:airport:NetworkNode;1"
+      "target": "dtmi:com:willowinc:airport:UtilityNetworkNode;1"
     },
     {
       "@type": "Relationship",
@@ -22,7 +22,7 @@
       "displayName": {
         "en": "ends at"
       },
-      "target": "dtmi:com:willowinc:airport:NetworkNode;1"
+      "target": "dtmi:com:willowinc:airport:UtilityNetworkNode;1"
     },
     {
       "@type": "Property",

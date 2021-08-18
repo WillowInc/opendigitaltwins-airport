@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:airport:TelecommunicationCable;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Telecommunication Cable"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:UtilityCable;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

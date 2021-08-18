@@ -349,7 +349,7 @@
         },
         "mapValue": {
           "name": "tagValue",
-          "schema": "boolean"
+          "schema": "string"
         }
       }
     }
