@@ -1,0 +1,4 @@
+
+[submodule "Ontology/.building"]
+	path = Ontology/.building
+	url = https://github.com/WillowInc/opendigitaltwins-building.git

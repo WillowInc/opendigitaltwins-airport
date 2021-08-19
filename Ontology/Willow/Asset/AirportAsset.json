@@ -1,0 +1,23 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AirportAsset;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airport Asset"
+  },
+  "extends" : [
+
+  ],
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "faaType",
+      "displayName": {
+        "en": "FAA Type"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "FAA Type code, i.e. L-852A"
+    }
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}
