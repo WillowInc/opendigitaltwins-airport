@@ -1,0 +1,14 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AirportAudioVisualEquipment;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airport Audio Visual Equipment"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AirportICTEquipment;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

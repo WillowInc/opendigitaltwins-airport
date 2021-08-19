@@ -1,11 +1,11 @@
 {
-  "@id": "dtmi:com:willowinc:airport:Aircraft;1",
+  "@id": "dtmi:com:willowinc:airport:AirportStructure;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Aircraft"
+    "en": "Structure"
   },
   "extends" : [
-    "dtmi:com:willowinc:airport:AirportVehicle;1"
+
   ],
   "contents": [
 
