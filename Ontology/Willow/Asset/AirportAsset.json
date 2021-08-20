@@ -5,7 +5,7 @@
     "en": "Airport Asset"
   },
   "extends" : [
-
+    "dtmi:com:willowinc:Asset;1"
   ],
   "contents": [
     {

@@ -5,7 +5,8 @@
     "en": "Airfield Pavement Marking"
   },
   "extends" : [
-    "dtmi:com:willowinc:airport:AirfieldPavementStructure;1"
+    "dtmi:com:willowinc:airport:AirfieldPavement;1",
+    "dtmi:com:willowinc:PavementMarking;1"
   ],
   "contents": [
     

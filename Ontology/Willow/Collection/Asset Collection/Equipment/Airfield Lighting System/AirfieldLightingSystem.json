@@ -5,7 +5,8 @@
     "en": "Airfield Lighting System"
   },
   "extends" : [
-    "dtmi:com:willowinc:airport:AirportEquipmentCollection;1"
+    "dtmi:com:willowinc:airport:AirportEquipmentCollection;1",
+    "dtmi:com:willowinc:LightingSystem;1"
   ],
   "contents": [
 

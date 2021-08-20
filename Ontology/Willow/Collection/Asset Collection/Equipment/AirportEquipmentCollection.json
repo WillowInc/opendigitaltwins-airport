@@ -5,7 +5,8 @@
     "en": "Airport Equipment Collection"
   },
   "extends" : [
-    "dtmi:com:willowinc:airport:AirportAssetCollection;1"
+    "dtmi:com:willowinc:airport:AirportAssetCollection;1",
+    "dtmi:com:willowinc:EquipmentCollection;1"
   ],
   "contents": [
   ],
