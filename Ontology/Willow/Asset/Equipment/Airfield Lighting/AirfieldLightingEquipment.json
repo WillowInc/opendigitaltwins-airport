@@ -5,7 +5,8 @@
     "en": "Lighting Equipment"
   },
   "extends": [
-    "dtmi:com:willowinc:airport:AirportEquipment;1"
+    "dtmi:com:willowinc:airport:AirportEquipment;1",
+    "dtmi:com:willowinc:LightingEquipment;1"
   ],
   "contents": [
     {

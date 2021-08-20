@@ -1,0 +1,15 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AirfieldPavement;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airfield Pavement"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AirportStructure;1",
+    "dtmi:com:willowinc:Pavement;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": "dtmi:dtdl:context;2"
+}

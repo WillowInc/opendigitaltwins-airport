@@ -5,7 +5,7 @@
     "en": "Structure"
   },
   "extends" : [
-
+    "dtmi:com:willowinc:Structure;1"
   ],
   "contents": [
 
