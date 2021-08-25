@@ -8,7 +8,52 @@
     "dtmi:com:willowinc:airport:AirportEquipment;1"
   ],
   "contents": [
-
+    {
+      "@type": "Property",
+      "name": "message",
+      "displayName": {
+        "en": "Message"
+      },
+      "writable": true,
+      "schema": "string",
+      "comment": "A | 36-18"
+    },
+    {
+      "@type": "Property",
+      "name": "messageHeight",
+      "displayName": {
+        "en": "Height"
+      },
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "panelHeight",
+      "displayName": {
+        "en": "Panel Height"
+      },
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "panelWidth",
+      "displayName": {
+        "en": "Panel Width"
+      },
+      "writable": true,
+      "schema": "double"
+    },
+    {
+      "@type": "Property",
+      "name": "installedHeight",
+      "displayName": {
+        "en": "Installed Height"
+      },
+      "writable": true,
+      "schema": "double"
+    }
   ],
   "@context": "dtmi:dtdl:context;2"
 }
