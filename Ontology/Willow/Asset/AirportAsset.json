@@ -19,5 +19,7 @@
       "comment": "FAA Type code, i.e. L-852A"
     }
   ],
-  "@context": "dtmi:dtdl:context;2"
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
 }
