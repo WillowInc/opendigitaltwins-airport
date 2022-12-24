@@ -1,0 +1,19 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AiportGate;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Gate"
+  },
+  "description": {
+    "en": "An area in an airport terminal where passengers board the aircraft. Gates typically have a seated waiting area, counter, and doorway leading to the aircraft."
+  },
+  "extends" : [
+    "dtmi:com:willowinc:airport:AirportSpace;1"
+  ],
+  "contents": [
+
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
