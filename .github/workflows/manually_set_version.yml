@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: 'true'
       - name: Set .nuspec version
         id: set-version
         uses: vers-one/dotnet-project-version-updater@v1.2
