@@ -17,6 +17,12 @@ IEnumerable<FileInfo> inputFiles = inputDirectory.EnumerateFiles($"*.json", Sear
 List<string> modelJson = new List<string>();
 foreach (FileInfo file in inputFiles)
 {
+    // Skip renovate.json
+    if (file.Name == "renovate.json")
+    {
+        continue;
+    }
+
     using StreamReader modelReader = new StreamReader(file.FullName);
     modelJson.Add(modelReader.ReadToEnd());
 }
