@@ -1,0 +1,16 @@
+{
+  "@id": "dtmi:com:willowinc:airport:AirportCapability;1",
+  "@type": "Interface",
+  "displayName": {
+    "en": "Airport Capability"
+  },
+  "extends" : [
+    "dtmi:com:willowinc:Capability;1"
+  ],
+  "contents": [
+    
+  ],
+  "@context": [
+    "dtmi:dtdl:context;3"
+  ]
+}
