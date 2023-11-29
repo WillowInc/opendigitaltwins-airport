@@ -1840,6 +1840,18 @@
       },
       {
         "@type": "Property",
+        "name": "mappedConnectorId",
+        "displayName": {
+          "en": "Mapped Connector ID"
+        },
+        "description": {
+          "en": "The connector ID as created by Mapped and stored as the $dtid of a Connector Application twin for the connector which has defined and trends this Capability."
+        },
+        "writable": true,
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
         "displayName": {
           "en": "name"
         },
@@ -2139,108 +2151,6 @@
       },
       {
         "@type": "Property",
-        "name": "phenomenon",
-        "displayName": {
-          "en": "Phenomenon"
-        },
-        "writable": true,
-        "schema": "dtmi:com:willowinc:CapabilityPhenomenon;1"
-      },
-      {
-        "@type": "Property",
-        "name": "position",
-        "displayName": {
-          "en": "Position"
-        },
-        "writable": true,
-        "schema": "dtmi:com:willowinc:CapabilityPosition;1"
-      },
-      {
-        "@type": "Property",
-        "name": "assetComponent",
-        "displayName": {
-          "en": "Asset Component"
-        },
-        "writable": true,
-        "schema": "dtmi:com:willowinc:CapabilityAssetComponent;1"
-      },
-      {
-        "@type": "Property",
-        "name": "hvacMode",
-        "displayName": {
-          "en": "HVAC Mode"
-        },
-        "writable": true,
-        "schema": "dtmi:com:willowinc:CapabilityHVACMode;1"
-      },
-      {
-        "@type": "Property",
-        "name": "stage",
-        "displayName": {
-          "en": "stage"
-        },
-        "writable": true,
-        "schema": "integer"
-      },
-      {
-        "@type": "Property",
-        "name": "occupancyMode",
-        "displayName": {
-          "en": "Occupancy Mode"
-        },
-        "writable": true,
-        "schema": "dtmi:com:willowinc:CapabilityOccupancyMode;1"
-      },
-      {
-        "@type": "Property",
-        "name": "electricalPhase",
-        "displayName": {
-          "en": "Electrical Phase"
-        },
-        "writable": true,
-        "schema": "dtmi:com:willowinc:CapabilityElectricalPhase;1"
-      },
-      {
-        "@type": "Property",
-        "name": "limit",
-        "displayName": {
-          "en": "Limit"
-        },
-        "writable": true,
-        "schema": "dtmi:com:willowinc:CapabilityLimit;1"
-      },
-      {
-        "@type": "Property",
-        "name": "effective",
-        "displayName": {
-          "en": "Effective"
-        },
-        "writable": true,
-        "schema": "boolean"
-      },
-      {
-        "@type": "Property",
-        "name": "demand",
-        "displayName": {
-          "en": "Demand"
-        },
-        "writable": true,
-        "schema": "boolean"
-      },
-      {
-        "@type": "Property",
-        "description": {
-          "en": "Notification of a condition which requires attention such as a threshold exceeded (Project Haystack). This differs from a Fault in that a Fault is used to identify a failure."
-        },
-        "displayName": {
-          "en": "alarm"
-        },
-        "name": "alarm",
-        "schema": "boolean",
-        "writable": true
-      },
-      {
-        "@type": "Property",
         "name": "tags",
         "displayName": {
           "en": "Tags"
@@ -2310,825 +2220,6 @@
       }
     ],
     "schemas": [
-      {
-        "@id": "dtmi:com:willowinc:CapabilityPhenomenon;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Data",
-            "displayName": {
-              "en": "Data"
-            },
-            "enumValue": "Data"
-          },
-          {
-            "name": "EthernetData",
-            "displayName": {
-              "en": "Ethernet Data"
-            },
-            "enumValue": "EthernetData"
-          },
-          {
-            "name": "WiFiData",
-            "displayName": {
-              "en": "Wi-Fi Data"
-            },
-            "enumValue": "WiFiData"
-          },
-          {
-            "name": "Electricity",
-            "displayName": {
-              "en": "Electricity"
-            },
-            "enumValue": "Electricity"
-          },
-          {
-            "name": "ACElectricity",
-            "displayName": {
-              "en": "AC Electricity"
-            },
-            "enumValue": "ACElectricity"
-          },
-          {
-            "name": "DCElectricity",
-            "displayName": {
-              "en": "DC Electricity"
-            },
-            "enumValue": "DCElectricity"
-          },
-          {
-            "name": "DriveElectricity",
-            "displayName": {
-              "en": "Drive Electricity"
-            },
-            "enumValue": "DriveElectricity"
-          },
-          {
-            "name": "Fuel",
-            "displayName": {
-              "en": "Fuel"
-            },
-            "enumValue": "Fuel"
-          },
-          {
-            "name": "Fire",
-            "displayName": {
-              "en": "Fire"
-            },
-            "enumValue": "Fire"
-          },
-          {
-            "name": "Smoke",
-            "displayName": {
-              "en": "Smoke"
-            },
-            "enumValue": "Smoke"
-          },
-          {
-            "name": "Light",
-            "displayName": {
-              "en": "Light"
-            },
-            "enumValue": "Light"
-          },
-          {
-            "name": "Sound",
-            "displayName": {
-              "en": "Sound"
-            },
-            "enumValue": "Sound"
-          },
-          {
-            "name": "Object",
-            "displayName": {
-              "en": "Object"
-            },
-            "enumValue": "Object"
-          },
-          {
-            "name": "People",
-            "displayName": {
-              "en": "People"
-            },
-            "enumValue": "People"
-          },
-          {
-            "name": "Solar",
-            "displayName": {
-              "en": "Solar"
-            },
-            "enumValue": "Solar"
-          },
-          {
-            "name": "Air",
-            "displayName": {
-              "en": "Air"
-            },
-            "enumValue": "Air"
-          },
-          {
-            "name": "CompressedAir",
-            "displayName": {
-              "en": "Compressed Air"
-            },
-            "enumValue": "Compressed Air"
-          },
-          {
-            "name": "NaturalGasFuel",
-            "displayName": {
-              "en": "Natural Gas"
-            },
-            "enumValue": "NaturalGasFuel"
-          },
-          {
-            "name": "Steam",
-            "displayName": {
-              "en": "Steam"
-            },
-            "enumValue": "Steam"
-          },
-          {
-            "name": "Condensate",
-            "displayName": {
-              "en": "Condensate"
-            },
-            "enumValue": "Condensate"
-          },
-          {
-            "name": "Drainage",
-            "displayName": {
-              "en": "Drainage"
-            },
-            "enumValue": "Drainage"
-          },
-          {
-            "name": "StormDrainage",
-            "displayName": {
-              "en": "Storm Drainage"
-            },
-            "enumValue": "StormDrainage"
-          },
-          {
-            "name": "WasteVentDrainage",
-            "displayName": {
-              "en": "Waste-Vent Drainage"
-            },
-            "enumValue": "WasteVentDrainage"
-          },
-          {
-            "name": "DieselFuel",
-            "displayName": {
-              "en": "Diesel"
-            },
-            "enumValue": "DieselFuel"
-          },
-          {
-            "name": "FuelOilFuel",
-            "displayName": {
-              "en": "Fuel Oil"
-            },
-            "enumValue": "FuelOilFuel"
-          },
-          {
-            "name": "GasolineFuel",
-            "displayName": {
-              "en": "Gasoline"
-            },
-            "enumValue": "GasolineFuel"
-          },
-          {
-            "name": "LiquidPropaneFuel",
-            "displayName": {
-              "en": "Liquid Propane"
-            },
-            "enumValue": "LiquidPropaneFuel"
-          },
-          {
-            "name": "Refrigerant",
-            "displayName": {
-              "en": "Refrigerant"
-            },
-            "enumValue": "Refrigerant"
-          },
-          {
-            "name": "Water",
-            "displayName": {
-              "en": "Water"
-            },
-            "enumValue": "Water"
-          },
-          {
-            "name": "MakeupWater",
-            "displayName": {
-              "en": "Makeup Water"
-            },
-            "enumValue": "MakeupWater"
-          },
-          {
-            "name": "IrrigationWater",
-            "displayName": {
-              "en": "Irrigation Water"
-            },
-            "enumValue": "IrrigationWater"
-          },
-          {
-            "name": "HotWater",
-            "displayName": {
-              "en": "Hot Water"
-            },
-            "enumValue": "HotWater"
-          },
-          {
-            "name": "LowTemperatureHotWater",
-            "displayName": {
-              "en": "Low Temperature Hot Water"
-            },
-            "enumValue": "LowTemperatureHotWater"
-          },
-          {
-            "name": "MediumTemperatureHotWater",
-            "displayName": {
-              "en": "Medium Temperature Hot Water"
-            },
-            "enumValue": "MediumTemperatureHotWater"
-          },
-          {
-            "name": "HighTemperatureHotWater",
-            "displayName": {
-              "en": "High Temperature Hot Water"
-            },
-            "enumValue": "HighTemperatureHotWater"
-          },
-          {
-            "name": "ColdDomesticWater",
-            "displayName": {
-              "en": "Cold Domestic Water"
-            },
-            "enumValue": "ColdDomesticWater"
-          },
-          {
-            "name": "HotDomesticWater",
-            "displayName": {
-              "en": "Hot Domestic Water"
-            },
-            "enumValue": "HotDomesticWater"
-          },
-          {
-            "name": "NonPotableDomesticWater",
-            "displayName": {
-              "en": "Non-Potable Domestic Water"
-            },
-            "enumValue": "NonPotableDomesticWater"
-          },
-          {
-            "name": "ChilledWater",
-            "displayName": {
-              "en": "Chilled Water"
-            },
-            "enumValue": "ChilledWater"
-          },
-          {
-            "name": "CondenserWater",
-            "displayName": {
-              "en": "Condenser Water"
-            },
-            "enumValue": "CondenserWater"
-          },
-          {
-            "name": "BlowdownWater",
-            "displayName": {
-              "en": "Blowdown Water"
-            },
-            "enumValue": "BlowdownWater"
-          },
-          {
-            "name": "DeionizedWater",
-            "displayName": {
-              "en": "Deionized Water"
-            },
-            "enumValue": "DeionizedWater"
-          },
-          {
-            "name": "SprinklerWater",
-            "displayName": {
-              "en": "Sprinkler Water"
-            },
-            "enumValue": "SprinklerWater"
-          },
-          {
-            "name": "Ice",
-            "displayName": {
-              "en": "Ice"
-            },
-            "enumValue": "Ice"
-          },
-          {
-            "name": "FrostIce",
-            "displayName": {
-              "en": "Frost"
-            },
-            "enumValue": "FrostIce"
-          },
-          {
-            "name": "Precipitation",
-            "displayName": {
-              "en": "Precipitation"
-            },
-            "enumValue": "Precipitation"
-          },
-          {
-            "name": "RainPrecipitation",
-            "displayName": {
-              "en": "Rain"
-            },
-            "enumValue": "RainPrecipitation"
-          },
-          {
-            "name": "SnowPrecipitation",
-            "displayName": {
-              "en": "Snow"
-            },
-            "enumValue": "SnowPrecipitation"
-          },
-          {
-            "name": "HailPrecipitation",
-            "displayName": {
-              "en": "Hail"
-            },
-            "enumValue": "HailPrecipitation"
-          },
-          {
-            "name": "SleetPrecipitation",
-            "displayName": {
-              "en": "Sleet"
-            },
-            "enumValue": "SleetPrecipitation"
-          },
-          {
-            "name": "FreezingRainPrecipitation",
-            "displayName": {
-              "en": "Freezing Rain"
-            },
-            "enumValue": "FreezingRainPrecipitation"
-          },
-          {
-            "name": "Cloudage",
-            "displayName": {
-              "en": "Cloudage"
-            },
-            "enumValue": "Cloudage"
-          },
-          {
-            "name": "Wind",
-            "displayName": {
-              "en": "Wind"
-            },
-            "enumValue": "Wind"
-          }
-        ]
-      },
-      {
-        "@id": "dtmi:com:willowinc:CapabilityPosition;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Exhaust",
-            "displayName": {
-              "en": "Exhaust"
-            },
-            "enumValue": "Exhaust"
-          },
-          {
-            "name": "Outside",
-            "displayName": {
-              "en": "Outside"
-            },
-            "enumValue": "Outside"
-          },
-          {
-            "name": "Return",
-            "displayName": {
-              "en": "Return"
-            },
-            "enumValue": "Return"
-          },
-          {
-            "name": "Discharge",
-            "displayName": {
-              "en": "Discharge"
-            },
-            "enumValue": "Discharge"
-          },
-          {
-            "name": "Zone",
-            "displayName": {
-              "en": "Zone"
-            },
-            "enumValue": "Zone"
-          },
-          {
-            "name": "Underfloor",
-            "displayName": {
-              "en": "Underfloor"
-            },
-            "enumValue": "Underfloor"
-          },
-          {
-            "name": "Economizer",
-            "displayName": {
-              "en": "Economizer"
-            },
-            "enumValue": "Economizer"
-          },
-          {
-            "name": "Mixed",
-            "displayName": {
-              "en": "Mixed"
-            },
-            "enumValue": "Mixed"
-          },
-          {
-            "name": "Entering",
-            "displayName": {
-              "en": "Entering"
-            },
-            "enumValue": "Entering"
-          },
-          {
-            "name": "Leaving",
-            "displayName": {
-              "en": "Leaving"
-            },
-            "enumValue": "Leaving"
-          },
-          {
-            "name": "Header",
-            "displayName": {
-              "en": "Header"
-            },
-            "enumValue": "Header"
-          },
-          {
-            "name": "Bypass",
-            "displayName": {
-              "en": "Bypass"
-            },
-            "enumValue": "Bypass"
-          },
-          {
-            "name": "Circulating",
-            "displayName": {
-              "en": "Circulating"
-            },
-            "enumValue": "Circulating"
-          },
-          {
-            "name": "Delta",
-            "displayName": {
-              "en": "Delta"
-            },
-            "enumValue": "Delta"
-          },
-          {
-            "name": "Upload",
-            "displayName": {
-              "en": "Upload"
-            },
-            "enumValue": "Upload"
-          },
-          {
-            "name": "Download",
-            "displayName": {
-              "en": "Download"
-            },
-            "enumValue": "Download"
-          },
-          {
-            "name": "Import",
-            "displayName": {
-              "en": "Import"
-            },
-            "enumValue": "Import"
-          },
-          {
-            "name": "Export",
-            "displayName": {
-              "en": "Export"
-            },
-            "enumValue": "Export"
-          },
-          {
-            "name": "Net",
-            "displayName": {
-              "en": "Net"
-            },
-            "enumValue": "Net"
-          },
-          {
-            "name": "Input",
-            "displayName": {
-              "en": "Input"
-            },
-            "enumValue": "Input"
-          },
-          {
-            "name": "Output",
-            "displayName": {
-              "en": "Output"
-            },
-            "enumValue": "Output"
-          },
-          {
-            "name": "Azimuth",
-            "displayName": {
-              "en": "Azimuth"
-            },
-            "enumValue": "Azimuth"
-          },
-          {
-            "name": "Zenith",
-            "displayName": {
-              "en": "Zenith"
-            },
-            "enumValue": "Zenith"
-          }
-        ]
-      },
-      {
-        "@id": "dtmi:com:willowinc:CapabilityAssetComponent;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Damper",
-            "displayName": {
-              "en": "Damper"
-            },
-            "enumValue": "Damper"
-          },
-          {
-            "name": "Fan",
-            "displayName": {
-              "en": "Fan"
-            },
-            "enumValue": "Fan"
-          },
-          {
-            "name": "Filter",
-            "displayName": {
-              "en": "Filter"
-            },
-            "enumValue": "Filter"
-          },
-          {
-            "name": "Motor",
-            "displayName": {
-              "en": "Motor"
-            },
-            "enumValue": "Motor"
-          },
-          {
-            "name": "Compressor",
-            "displayName": {
-              "en": "Compressor"
-            },
-            "enumValue": "Compressor"
-          },
-          {
-            "name": "Condenser",
-            "displayName": {
-              "en": "Condenser"
-            },
-            "enumValue": "Condenser"
-          },
-          {
-            "name": "Evaporator",
-            "displayName": {
-              "en": "Evaporator"
-            },
-            "enumValue": "Evaporator"
-          },
-          {
-            "name": "Coil",
-            "displayName": {
-              "en": "Coil"
-            },
-            "enumValue": "Coil"
-          },
-          {
-            "name": "coolingCoil",
-            "displayName": {
-              "en": "Cooling Coil"
-            },
-            "enumValue": "Cooling Coil"
-          },
-          {
-            "name": "heatingCoil",
-            "displayName": {
-              "en": "Heating Coil"
-            },
-            "enumValue": "Heating Coil"
-          },
-          {
-            "name": "VFD",
-            "displayName": {
-              "en": "VFD"
-            },
-            "enumValue": "VFD"
-          },
-          {
-            "name": "Battery",
-            "displayName": {
-              "en": "Battery"
-            },
-            "enumValue": "Battery"
-          }
-        ]
-      },
-      {
-        "@id": "dtmi:com:willowinc:CapabilityHVACMode;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Cooling",
-            "displayName": {
-              "en": "Cooling"
-            },
-            "enumValue": "Cooling"
-          },
-          {
-            "name": "Heating",
-            "displayName": {
-              "en": "Heating"
-            },
-            "enumValue": "Heating"
-          },
-          {
-            "name": "Economizing",
-            "displayName": {
-              "en": "Economizing"
-            },
-            "enumValue": "Economizing"
-          },
-          {
-            "name": "Reheat",
-            "displayName": {
-              "en": "Reheat"
-            },
-            "enumValue": "Reheat"
-          },
-          {
-            "name": "Cooldown",
-            "displayName": {
-              "en": "Cooldown"
-            },
-            "enumValue": "Cooldown"
-          },
-          {
-            "name": "Warmup",
-            "displayName": {
-              "en": "Warmup"
-            },
-            "enumValue": "Warmup"
-          },
-          {
-            "name": "Purge",
-            "displayName": {
-              "en": "Purge"
-            },
-            "enumValue": "Purge"
-          },
-          {
-            "name": "Pressurize",
-            "displayName": {
-              "en": "Pressurize"
-            },
-            "enumValue": "Pressurize"
-          },
-          {
-            "name": "Depressurize",
-            "displayName": {
-              "en": "Depressurize"
-            },
-            "enumValue": "Depressurize"
-          },
-          {
-            "name": "Manual",
-            "displayName": {
-              "en": "Manual"
-            },
-            "enumValue": "Manual"
-          }
-        ]
-      },
-      {
-        "@id": "dtmi:com:willowinc:CapabilityOccupancyMode;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Occupied",
-            "displayName": {
-              "en": "Occupied"
-            },
-            "enumValue": "Occupied"
-          },
-          {
-            "name": "Unoccupied",
-            "displayName": {
-              "en": "Unoccupied"
-            },
-            "enumValue": "Unoccupied"
-          },
-          {
-            "name": "Standby",
-            "displayName": {
-              "en": "Standby"
-            },
-            "enumValue": "Standby"
-          }
-        ]
-      },
-      {
-        "@id": "dtmi:com:willowinc:CapabilityElectricalPhase;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "A",
-            "displayName": {
-              "en": "A"
-            },
-            "enumValue": "A"
-          },
-          {
-            "name": "B",
-            "displayName": {
-              "en": "B"
-            },
-            "enumValue": "B"
-          },
-          {
-            "name": "C",
-            "displayName": {
-              "en": "C"
-            },
-            "enumValue": "C"
-          },
-          {
-            "name": "AB",
-            "displayName": {
-              "en": "AB"
-            },
-            "enumValue": "AB"
-          },
-          {
-            "name": "BC",
-            "displayName": {
-              "en": "BC"
-            },
-            "enumValue": "BC"
-          },
-          {
-            "name": "CA",
-            "displayName": {
-              "en": "CA"
-            },
-            "enumValue": "CA"
-          },
-          {
-            "name": "N",
-            "displayName": {
-              "en": "N"
-            },
-            "enumValue": "N"
-          }
-        ]
-      },
-      {
-        "@id": "dtmi:com:willowinc:CapabilityLimit;1",
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "name": "Minimum",
-            "displayName": {
-              "en": "Minimum"
-            },
-            "enumValue": "Minimum"
-          },
-          {
-            "name": "Maximum",
-            "displayName": {
-              "en": "Maximum"
-            },
-            "enumValue": "Maximum"
-          }
-        ]
-      },
       {
         "@id": "dtmi:com:willowinc:CapabilityAlternateClassificationObject;1",
         "@type": "Object",
@@ -4269,6 +3360,15 @@
       },
       {
         "@type": "Property",
+        "name": "siteID",
+        "displayName": {
+          "en": "Site ID"
+        },
+        "writable": true,
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
         "displayName": {
           "en": "name"
         },
@@ -4345,6 +3445,61 @@
       },
       {
         "@type": "Property",
+        "name": "alternateClassification",
+        "displayName": {
+          "en": "Alternate Classification"
+        },
+        "writable": true,
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "masterFormat",
+              "displayName": {
+                "en": "MasterFormat"
+              },
+              "schema": "dtmi:com:willowinc:SoftwareAlternateClassificationObject;1"
+            },
+            {
+              "name": "omniClass",
+              "displayName": {
+                "en": "OmniClass"
+              },
+              "schema": "dtmi:com:willowinc:SoftwareAlternateClassificationObject;1"
+            },
+            {
+              "name": "uniFormat",
+              "displayName": {
+                "en": "UniFormat"
+              },
+              "schema": "dtmi:com:willowinc:SoftwareAlternateClassificationObject;1"
+            },
+            {
+              "name": "uniclass",
+              "displayName": {
+                "en": "Uniclass"
+              },
+              "schema": "dtmi:com:willowinc:SoftwareAlternateClassificationObject;1"
+            },
+            {
+              "name": "projectHaystack",
+              "displayName": {
+                "en": "Project Haystack"
+              },
+              "schema": "dtmi:com:willowinc:SoftwareAlternateClassificationObject;1"
+            },
+            {
+              "name": "brickSchema",
+              "displayName": {
+                "en": "Brick Schema"
+              },
+              "schema": "dtmi:com:willowinc:SoftwareAlternateClassificationObject;1"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Property",
         "name": "version",
         "displayName": {
           "en": "Version"
@@ -4384,6 +3539,26 @@
       }
     ],
     "schemas": [
+      {
+        "@id": "dtmi:com:willowinc:SoftwareAlternateClassificationObject;1",
+        "@type": "Object",
+        "fields": [
+          {
+            "name": "version",
+            "displayName": {
+              "en": "Version"
+            },
+            "schema": "string"
+          },
+          {
+            "name": "code",
+            "displayName": {
+              "en": "Code"
+            },
+            "schema": "string"
+          }
+        ]
+      },
       {
         "@id": "dtmi:com:willowinc:SoftwareMappedIdObject;1",
         "@type": "Object",
@@ -11253,6 +10428,15 @@
       {
         "@type": "Property",
         "displayName": {
+          "en": "refrigerant type"
+        },
+        "name": "refrigerantType",
+        "schema": "string",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
           "en": "type"
         },
         "name": "type",
@@ -11310,6 +10494,127 @@
         "annotates": "designMassFlow",
         "overrides": "unit",
         "schema": "MassFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "motor power"
+        },
+        "name": "motorPower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "motor power unit"
+        },
+        "name": "motorPowerUnit",
+        "annotates": "motorPower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "rated load current"
+        },
+        "description": {
+          "en": "The rated load current, or rated load amps (RLA) is the maximum current the compressor should draw under normal operation."
+        },
+        "name": "ratedLoadCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "rated load current unit"
+        },
+        "name": "ratedLoadCurrentUnit",
+        "annotates": "ratedLoadCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "maximum continuous current"
+        },
+        "description": {
+          "en": "The maximum continuous current (MCC) is the current at which the compressor overload protection trips."
+        },
+        "name": "maximumContinuousCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "maximum continuous current unit"
+        },
+        "name": "maximumContinuousCurrentUnit",
+        "annotates": "maximumContinuousCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Current",
+          "Property"
+        ],
+        "displayName": {
+          "en": "locked rotor current"
+        },
+        "description": {
+          "en": "The locked rotor current, or locked rotor amps (LRA) is the current drawn by the compressor when applying full voltage while starting."
+        },
+        "name": "lockedRotorCurrent",
+        "schema": "double",
+        "unit": "ampere",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "locked rotor current unit"
+        },
+        "name": "lockedRotorCurrentUnit",
+        "annotates": "lockedRotorCurrent",
+        "overrides": "unit",
+        "schema": "CurrentUnit",
         "writable": true
       }
     ],
@@ -11377,16 +10682,6 @@
       "dtmi:com:willowinc:Application;1"
     ],
     "contents": [
-      {
-        "@type": "Property",
-        "name": "connectorID",
-        "displayName": {
-          "en": "Connector ID"
-        },
-        "writable": true,
-        "schema": "string",
-        "comment": "Willow Connector identifier which manages the Capabiltiy"
-      },
       {
         "@type": "Property",
         "name": "connectorType",
@@ -12328,6 +11623,34 @@
         "writable": true
       },
       {
+        "@type": [
+          "Property",
+          "Pressure"
+        ],
+        "displayName": {
+          "en": "design external static pressure"
+        },
+        "name": "designExternalStaticPressure",
+        "schema": "double",
+        "unit": "pascal",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design external static pressure unit"
+        },
+        "name": "designExternalStaticPressureUnit",
+        "annotates": "designExternalStaticPressure",
+        "overrides": "unit",
+        "schema": "PressureUnit",
+        "writable": true
+      },
+      {
         "@type": "Property",
         "displayName": {
           "en": "drive type"
@@ -12347,6 +11670,18 @@
           ],
           "valueSchema": "string"
         },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Number of Fans"
+        },
+        "description": {
+          "en": "The number of fans which make up a fan array"
+        },
+        "name": "numberOfFans",
+        "schema": "integer",
         "writable": true
       }
     ],
@@ -12411,6 +11746,20 @@
     "@type": "Interface",
     "displayName": {
       "en": "Fire Protection Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FitnessEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fitness Equipment"
     },
     "extends": [
       "dtmi:com:willowinc:Equipment;1"
@@ -12806,6 +12155,110 @@
         "overrides": "unit",
         "schema": "PressureUnit",
         "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Dry Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirDryBulbTemperatureUnit",
+        "annotates": "designEnteringAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirDryBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Dry Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirDryBulbTemperatureUnit",
+        "annotates": "designLeavingAirDryBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Air Wet Bulb Temperature Unit"
+        },
+        "name": "designEnteringAirWetBulbTemperatureUnit",
+        "annotates": "designEnteringAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingAirWetBulbTemperature",
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Air Wet Bulb Temperature Unit"
+        },
+        "name": "designLeavingAirWetBulbTemperatureUnit",
+        "annotates": "designLeavingAirWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
       }
     ],
     "@context": [
@@ -15842,6 +15295,71 @@
         "overrides": "unit",
         "schema": "VolumeFlowRateUnit",
         "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Number of Fans"
+        },
+        "name": "numberOfFans",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "total fan power"
+        },
+        "name": "totalFanPower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "total fan power unit"
+        },
+        "name": "totalFanPowerUnit",
+        "annotates": "totalFanPower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Power",
+          "Property"
+        ],
+        "displayName": {
+          "en": "total fan brake horsepower"
+        },
+        "name": "totalFanbrakeHorsepower",
+        "schema": "double",
+        "unit": "horsepower",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "total fan brake horsepower unit"
+        },
+        "name": "totalFanbrakeHorsepowerUnit",
+        "annotates": "totalFanbrakeHorsepower",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
       }
     ],
     "@context": [
@@ -16123,6 +15641,34 @@
         "annotates": "netSensibleCoolingCapacity",
         "overrides": "unit",
         "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Minimum Outside Airflow"
+        },
+        "name": "designMinOutsideAirflow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Minimum Outside Airflow Unit"
+        },
+        "name": "designMinOutsideAirflowUnit",
+        "annotates": "designMinOutsideAirflow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
         "writable": true
       },
       {
@@ -17204,6 +16750,84 @@
         "schema": "integer",
         "unit": "gallonPerHour",
         "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWaterTemperature",
+        "displayName": {
+          "en": "Design Entering Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Water Temperature Unit"
+        },
+        "name": "designEnteringWaterTemperatureUnit",
+        "annotates": "designEnteringWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingWaterTemperature",
+        "displayName": {
+          "en": "Design Leaving Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Water Temperature Unit"
+        },
+        "name": "designLeavingWaterTemperatureUnit",
+        "annotates": "designLeavingWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designDeltaWaterTemperature",
+        "displayName": {
+          "en": "Design Delta Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Delta Water Temperature Unit"
+        },
+        "name": "designDeltaWaterTemperatureUnit",
+        "annotates": "designDeltaWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
       }
     ],
     "@context": [
@@ -17351,6 +16975,20 @@
         "writable": true
       }
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CardioFitnessEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cardio Fitness Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FitnessEquipment;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -18097,6 +17735,178 @@
         },
         "name": "fan",
         "schema": "dtmi:com:willowinc:Fan;1"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Number of Cells"
+        },
+        "name": "numberOfCells",
+        "schema": "integer",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWaterTemperature",
+        "displayName": {
+          "en": "Design Entering Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Water Temperature Unit"
+        },
+        "name": "designEnteringWaterTemperatureUnit",
+        "annotates": "designEnteringWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designLeavingWaterTemperature",
+        "displayName": {
+          "en": "Design Leaving Water Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Leaving Water Temperature Unit"
+        },
+        "name": "designLeavingWaterTemperatureUnit",
+        "annotates": "designLeavingWaterTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designEnteringWetBulbTemperature",
+        "displayName": {
+          "en": "Design Entering Wet Bulb Temperature"
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Entering Wet Bulb Temperature Unit"
+        },
+        "name": "designEnteringWetBulbTemperatureUnit",
+        "annotates": "designEnteringWetBulbTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "approach",
+        "displayName": {
+          "en": "Approach"
+        },
+        "description": {
+          "en": "The cooling tower approach is the difference between leaving water temperature and ambient wet bulb temperature."
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Approach Unit"
+        },
+        "name": "approachUnit",
+        "annotates": "approach",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Minimum Flow"
+        },
+        "name": "designMinFlow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Minimum Flow Unit"
+        },
+        "name": "designMinFlowUnit",
+        "annotates": "designMinFlow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "VolumeFlowRate"
+        ],
+        "displayName": {
+          "en": "Design Maximum Flow"
+        },
+        "name": "designMaxFlow",
+        "schema": "double",
+        "unit": "litrePerSecond",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Design Maximum Flow Unit"
+        },
+        "name": "designMaxFlowUnit",
+        "annotates": "designMaxFlow",
+        "overrides": "unit",
+        "schema": "VolumeFlowRateUnit",
+        "writable": true
       }
     ],
     "@context": [
@@ -22201,7 +22011,100 @@
       "dtmi:com:willowinc:RefrigerationEquipment;1",
       "dtmi:com:willowinc:Compressor;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal energy efficiency ratio (EER)"
+        },
+        "name": "nominalEnergyEfficiencyRatio",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design energy efficiency ratio (EER)"
+        },
+        "name": "designEnergyEfficiencyRatio",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "nominal coefficient of performance (COP)"
+        },
+        "name": "nominalCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "design coefficient of performance (COP)"
+        },
+        "name": "designCoefficientOfPerformance",
+        "schema": "double",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "nominal cooling capacity"
+        },
+        "name": "nominalCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "nominal cooling capacity unit"
+        },
+        "name": "nominalCoolingCapacityUnit",
+        "annotates": "nominalCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "EnergyRate"
+        ],
+        "displayName": {
+          "en": "design cooling capacity"
+        },
+        "name": "designCoolingCapacity",
+        "schema": "double",
+        "unit": "britishThermalUnitPerHour",
+        "writable": true
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "design cooling capacity unit"
+        },
+        "name": "designCoolingCapacityUnit",
+        "annotates": "designCoolingCapacity",
+        "overrides": "unit",
+        "schema": "PowerUnit",
+        "writable": true
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1",
@@ -22715,6 +22618,20 @@
       "en": "Storm Sewer Outlet"
     },
     "extends": "dtmi:com:willowinc:DistributionConnector;1",
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:StrengthFitnessEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Strength Fitness Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FitnessEquipment;1"
+    ],
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
@@ -26181,6 +26098,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CompressorCurrentSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressor Current Sensor"
+    },
+    "description": {
+      "en": "The current feedback from a sensor associated with an integrated compressor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ComputerMonitor;1",
     "@type": "Interface",
     "displayName": {
@@ -26650,6 +26584,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DefrostHeaterCurrentSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Defrost Heater Current Sensor"
+    },
+    "description": {
+      "en": "The current feedback from a sensor associated with an integrated defrost heater for an evaporator of a refrigeration equipment."
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -27926,6 +27877,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FanCurrentSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan Current Sensor"
+    },
+    "description": {
+      "en": "The current feedback from a sensor associated with an integrated fan"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:Faucet;1",
     "@type": "Interface",
     "displayName": {
@@ -28634,7 +28602,16 @@
     "extends": [
       "dtmi:com:willowinc:FoodStorageEquipment;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Evaporator Fan"
+        },
+        "name": "evaporatorFan",
+        "schema": "dtmi:com:willowinc:Fan;1"
+      }
+    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -32310,6 +32287,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PumpCurrentSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pump Current Sensor"
+    },
+    "description": {
+      "en": "The current feedback from a sensor associated with an integrated pump"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RadiantHeatingManifold;1",
     "@type": "Interface",
     "displayName": {
@@ -33067,6 +33061,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:PressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:StationaryBicycle;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Stationary Bicycle"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CardioFitnessEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -33959,6 +33967,20 @@
     "@context": [
       "dtmi:dtdl:context;3",
       "dtmi:dtdl:extension:quantitativeTypes;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:Treadmill;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Treadmill"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CardioFitnessEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -37772,6 +37794,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DefrostTerminationTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Defrost Termination Temperature Setpoint"
+    },
+    "description": {
+      "en": "The temperature setpoint at which a defrost cycle is set to stop running, typically on an evaporator coil."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DeltaAirPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39050,6 +39089,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FaceAndBypassDamperPositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Face and Bypass Damper Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the face and bypass dampers"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FaceAndBypassDamperPositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Face and Bypass Damper Position State"
+    },
+    "description": {
+      "en": "The percent position state of the face and bypass dampers"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DamperPositionState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:FanCoilUnitReheat;1",
     "@type": "Interface",
     "displayName": {
@@ -40299,6 +40372,23 @@
     },
     "description": {
       "en": "The temperature feedback from a sensor associated with inlet air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InteriorAirTemperatureSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Interior Air Temperature Sensor"
+    },
+    "description": {
+      "en": "The air temperature feedback from a sensor associated with interior of an equipment such as a refrigerator, oven, or computer."
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
@@ -42421,6 +42511,32 @@
     },
     "extends": [
       "dtmi:com:willowinc:FoodDisplayCase;1"
+    ],
+    "contents": [
+      {
+        "@type": "Component",
+        "displayName": {
+          "en": "Evaporator Fan"
+        },
+        "name": "evaporatorFan",
+        "schema": "dtmi:com:willowinc:Fan;1"
+      }
+    ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationCircuit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Circuit"
+    },
+    "description": {
+      "en": "A group of evaporators that are controlled together."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipmentGroup;1"
     ],
     "contents": [],
     "@context": [
@@ -45354,6 +45470,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BilledElectricalDemandCost;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Electrical Demand Cost"
+    },
+    "description": {
+      "en": "The billed electrical cost trend associated with electrical demand, typically on a monthly basis."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BilledElectricalCost;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BilledElectricalEnergyCost;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Electrical Energy Cost"
+    },
+    "description": {
+      "en": "The billed electrical cost trend associated with energy consumption, typically on a monthly basis."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BilledElectricalCost;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BilledGarbageWasteCost;1",
     "@type": "Interface",
     "displayName": {
@@ -46089,6 +46239,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CompressorRunLevelActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Compressor Run Level Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the run level of the compressor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CompressorRunLevelState;1",
     "@type": "Interface",
     "displayName": {
@@ -46549,6 +46716,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DefrostRunActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Defrost Run Actuator"
+    },
+    "description": {
+      "en": "The boolean command of the defrost mode of an equipment which sets the state to \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DefrostRunState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Defrost Run State"
+    },
+    "description": {
+      "en": "The Boolean state of the defrost mode of an equipment which is \u0027run\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RunState;1"
     ],
     "contents": [],
     "@context": [
@@ -47118,6 +47319,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:PlumbingWaterSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EconomizerCoilCondenserWaterValvePositionActuator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Coil Condenser Water Valve Position Actuator"
+    },
+    "description": {
+      "en": "The percent command which sets the position of the economizer coil condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EconomizerCoilCondenserWaterValvePositionState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Economizer Coil Condenser Water Valve Position State"
+    },
+    "description": {
+      "en": "The percent position state of the economizer coil condenser water valve"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterValvePositionState;1"
     ],
     "contents": [],
     "@context": [
@@ -54007,6 +54242,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CoolingAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with cooling air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CoolingAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with cooling air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CoolingLevelSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -55736,6 +56005,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingAirVolumeFlowSetpointHighLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Air Volume Flow Setpoint High Limit"
+    },
+    "description": {
+      "en": "The high limit associated with heating air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointHighLimit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HeatingAirVolumeFlowSetpointLowLimit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Air Volume Flow Setpoint Low Limit"
+    },
+    "description": {
+      "en": "The low limit associated with heating air volume flow setpoint"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirVolumeFlowSetpointLowLimit;1"
     ],
     "contents": [],
     "@context": [
@@ -62049,7 +62352,7 @@
       "en": "Total Active Electrical Power Demand Sensor"
     },
     "description": {
-      "en": "The active electrical power demand feedback from a sensor associated with total"
+      "en": "The peak quantity of electrical power demand during a set time period, typically monthly."
     },
     "extends": [
       "dtmi:com:willowinc:TotalActiveElectricalPowerSensor;1"
