@@ -8643,33 +8643,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:AlarmSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Alarm Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Sensor;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "boolean",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ArchitecturalAssetCollection;1",
     "@type": "Interface",
     "displayName": {
@@ -10276,33 +10249,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CapacitySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Capacity Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Sensor;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "double",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Ceiling;1",
     "@type": "Interface",
     "displayName": {
@@ -10334,33 +10280,6 @@
         "writable": true,
         "schema": "string",
         "comment": "basic, adjustable-height"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "CO2 Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Sensor;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "double",
-        "writable": true
       }
     ],
     "@context": [
@@ -10626,30 +10545,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CompressorActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Compressor Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "boolean"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Condenser;1",
     "@type": "Interface",
     "displayName": {
@@ -10765,58 +10660,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CoolingActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cooling Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "double",
-        "comment": "%"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:COSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Carbon Monoxide Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Sensor;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "double",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Culvert;1",
     "@type": "Interface",
     "description": {
@@ -10829,30 +10672,6 @@
       "dtmi:com:willowinc:Tunnel;1"
     ],
     "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DamperActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Damper Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "boolean"
-      }
-    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -11030,33 +10849,6 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DurationSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Duration Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Sensor;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "double",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -11693,55 +11485,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:FanActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fan Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "boolean"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FanSpeedActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fan Speed Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "double",
-        "comment": "%"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:FireProtectionEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -11854,31 +11597,6 @@
       "dtmi:com:willowinc:ArchitecturalAsset;1"
     ],
     "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HeatingActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Heating Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "double",
-        "comment": "%"
-      }
-    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -13041,23 +12759,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ModeSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mode Sensor"
-    },
-    "description": {
-      "en": "The mode feedback from a multi-state sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Sensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MultiState;1",
     "@type": "Interface",
     "displayName": {
@@ -13087,33 +12788,6 @@
       "dtmi:com:willowinc:Actuator;1"
     ],
     "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:NO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "NO2 Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Sensor;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "double",
-        "writable": true
-      }
-    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -13684,30 +13358,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PumpActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pump Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "boolean"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:QuantityPerformanceIndicator;1",
     "@type": "Interface",
     "displayName": {
@@ -13768,31 +13418,6 @@
       "dtmi:com:willowinc:Equipment;1"
     ],
     "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReheatActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Reheat Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "double",
-        "comment": "%"
-      }
-    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -14545,33 +14170,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:StatusSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Status Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Sensor;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "boolean",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:StructuralBeam;1",
     "@type": "Interface",
     "displayName": {
@@ -14619,6 +14217,20 @@
     },
     "extends": [
       "dtmi:com:willowinc:StructuralBuildingComponent;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SwimmingPoolEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Swimming Pool Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Equipment;1"
     ],
     "contents": [],
     "@context": [
@@ -14880,20 +14492,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TVOCSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "TVOC Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Sensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:Valve;1",
     "@type": "Interface",
     "displayName": {
@@ -14984,30 +14582,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ValveActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Valve Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "boolean"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:VehicleEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -15017,31 +14591,6 @@
       "dtmi:com:willowinc:Equipment;1"
     ],
     "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:VFDActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "VFD Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Actuator;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "double",
-        "comment": "%"
-      }
-    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -15157,20 +14706,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantityPerformanceIndicator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:AirCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air CO2 Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2Sensor;1"
     ],
     "contents": [],
     "@context": [
@@ -15367,20 +14902,6 @@
       "dtmi:dtdl:extension:quantitativeTypes;1",
       "dtmi:dtdl:extension:annotation;1",
       "dtmi:dtdl:extension:overriding;1"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:AirCOSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air Carbon Monoxide Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:COSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
     ]
   },
   {
@@ -15882,6 +15403,27 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Section"
+    },
+    "description": {
+      "en": "A primary element of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:HVACEquipment;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirInletsOutlets;1",
     "@type": "Interface",
     "displayName": {
@@ -15889,20 +15431,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HVACEquipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:AirNO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air NO2 Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:NO2Sensor;1"
     ],
     "contents": [],
     "@context": [
@@ -16420,47 +15948,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:AirTVOCSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air TVOC Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:TVOCSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:AlarmSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Alarm Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Setpoint;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "boolean",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:AlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -16953,33 +16440,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CapacitySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Capacity Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Setpoint;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "double",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CardioFitnessEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -17237,33 +16697,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CO2Setpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "CO2 Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Setpoint;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "double",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CoefficientOfPerformance;1",
     "@type": "Interface",
     "displayName": {
@@ -17274,20 +16707,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:RatioPerformanceIndicator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CompressedAir;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Compressed Air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PlumbingEquipment;1"
     ],
     "contents": [],
     "@context": [
@@ -17968,20 +17387,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DamperStatusSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Damper Status Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StatusSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DataNetworkEquipment;1",
     "@type": "Interface",
     "displayName": {
@@ -18278,33 +17683,6 @@
           "en": "Duct Inlet"
         },
         "schema": "dtmi:com:willowinc:DuctConnection;1"
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DurationSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Duration Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Setpoint;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "double",
-        "writable": true
       }
     ],
     "@context": [
@@ -19010,20 +18388,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:FanStatusSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fan Status Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StatusSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:FatsOilsGreaseDisposal;1",
     "@type": "Interface",
     "displayName": {
@@ -19045,34 +18409,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FireProtectionEquipment;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FireExtinguisherRemovedSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fire Extinguisher Removed Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StatusSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FireExtinguisherTroubleSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fire Extinguisher Trouble Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StatusSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -21380,23 +20716,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MultiStateSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Multi-State Sensor"
-    },
-    "description": {
-      "en": "The feedback from a multi-state sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StateSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:NormalFaultActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -21424,20 +20743,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:BinaryState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OccupiedModeActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Occupied Mode Actuator"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ModeActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -21601,34 +20906,6 @@
       "dtmi:com:willowinc:RetailEquipment;1"
     ],
     "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PercentSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Percent Unity Sensor"
-    },
-    "description": {
-      "en": "The percent feedback from a sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StateSensor;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "name": "lastValue",
-        "displayName": {
-          "en": "Last Value"
-        },
-        "writable": true,
-        "schema": "double",
-        "comment": "%"
-      }
-    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -21916,20 +21193,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:PumpStatusSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pump Status Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StatusSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -22343,6 +21606,21 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerationTank;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Tank"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationEquipment;1",
+      "dtmi:com:willowinc:Tank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReplaceComponentState;1",
     "@type": "Interface",
     "displayName": {
@@ -22554,33 +21832,6 @@
       "dtmi:com:willowinc:Setpoint;1"
     ],
     "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:StatusSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Status Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Setpoint;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "boolean",
-        "writable": true
-      }
-    ],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -23277,33 +22528,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:TVOCSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "TVOC Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:Setpoint;1"
-    ],
-    "contents": [
-      {
-        "@type": "Property",
-        "description": {
-          "en": "REC entities may be associated with values (e.g., Sensors, Setpoints, etc)."
-        },
-        "displayName": {
-          "en": "Last Value"
-        },
-        "name": "lastValue",
-        "schema": "double",
-        "writable": true
-      }
-    ],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:UnitHeater;1",
     "@type": "Interface",
     "displayName": {
@@ -23413,20 +22637,6 @@
     "extends": [
       "dtmi:com:willowinc:ToiletAccessory;1",
       "dtmi:com:willowinc:RestroomAccessory;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ValveStatusSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Valve Status Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StatusSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -24195,20 +23405,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:AirCO2Setpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air CO2 Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2Setpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:AirCompressor;1",
     "@type": "Interface",
     "displayName": {
@@ -24610,6 +23806,111 @@
     "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitDischargeSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Discharge Section"
+    },
+    "description": {
+      "en": "A discharge section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitExhaustSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Exhaust Section"
+    },
+    "description": {
+      "en": "An exhaust section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitFanSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Fan Section"
+    },
+    "description": {
+      "en": "A primary element of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitReturnSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Return Section"
+    },
+    "description": {
+      "en": "A return section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHandlingUnitTemperingSection;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Handling Unit Section"
+    },
+    "description": {
+      "en": "The tempering section of an air handling unit."
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnitSection;1"
+    ],
+    "contents": [],
+    "schemas": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -25251,20 +24552,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:AirTVOCSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air TVOC Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:TVOCSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:AngleSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -25555,23 +24842,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:Luminaire;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:BreakGlassSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Break Glass Sensor"
-    },
-    "description": {
-      "en": "The Boolean \u0027break glass\u0027 status from a sensor where \u0027alarm\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -26129,6 +25399,34 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ComputerRoomAirConditioningUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Computer Room Air Conditioning (CRAC) Unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ComputerRoomAirHandlingUnit;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Computer Room Air Handling (CRAH) Unit"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHandlingUnit;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondensatePump;1",
     "@type": "Interface",
     "displayName": {
@@ -26170,6 +25468,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:QuantitySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ContactState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Contact State"
+    },
+    "description": {
+      "en": "The Boolean status from a state where \u0027contact\u0027 is \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OpenCloseState;1"
     ],
     "contents": [],
     "@context": [
@@ -26550,23 +25865,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultOverrideActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DefaultOverrideSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Default/Override Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027override\u0027 is \u0027true\u0027 and \u0027default\u0027 is \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -28222,23 +27520,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:FireSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fire Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor associated with fire where \u0027alarm\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:FireSuppressionTank;1",
     "@type": "Interface",
     "displayName": {
@@ -29798,23 +29079,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LeakSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Leak Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor associated with leaks where \u0027alarm\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LengthSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -29842,23 +29106,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:LevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Level Sensor"
-    },
-    "description": {
-      "en": "The level feedback from a sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PercentSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -30479,6 +29726,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:NaturalGasEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Natural Gas Energy Sensor"
+    },
+    "description": {
+      "en": "The natural gas energy feedback from a sensor"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:NaturalGasMassSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -30573,23 +29837,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:NormalFaultActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:NormalFaultSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Normal/Fault Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027fault\u0027 is \u0027true\u0027 and \u0027normal\u0027 is \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -30815,23 +30062,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OnOffSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "On/Off Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027on\u0027 is \u0027true\u0027 and \u0027normal\u0027 is \u0027off\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:OnState;1",
     "@type": "Interface",
     "displayName": {
@@ -30859,23 +30089,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OpenCloseSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Open/Close Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027open\u0027 is \u0027true\u0027 and \u0027close\u0027 is \u0027off\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -32100,23 +31313,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Position Sensor"
-    },
-    "description": {
-      "en": "The position percent feedback from a sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PercentSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PowerFactorSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -32379,6 +31575,60 @@
     },
     "extends": [
       "dtmi:com:willowinc:EquipmentGroup;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationLiquidRefrigerantReceiver;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Liquid Refrigerant Receiver"
+    },
+    "description": {
+      "en": "A liquid refrigerant receiver tank, or simply receiver, used in a refrigeration system holds excess refrigerant after the condenser to ensure proper liquid refrigerent to the expansion valve inlet of the evaporators."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationTank;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationSubcooler;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Subcooler"
+    },
+    "description": {
+      "en": "A refrigeration subcooler used in a refrigeration system or circuit to reduce the temperature of the refrigerant to increase evaporator performance."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationHeatExchanger;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerationSuctionLineAccumulator;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigeration Suction Line Accumulator"
+    },
+    "description": {
+      "en": "A refrigeratino suction line accumulator used in a refrigeration system prevents damaging overflow of liquid refrigerant and oil from going back to the compressor."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerationTank;1"
     ],
     "contents": [],
     "@context": [
@@ -32753,23 +32003,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SmokeSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Smoke Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor associated with smoke where \u0027alarm\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:SO2AirQualitySensor;1",
     "@type": "Interface",
     "displayName": {
@@ -33027,23 +32260,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:StartStopState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:StartStopSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Start/Stop Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027start\u0027 is \u0027true\u0027 and \u0027stop\u0027 is \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:BinarySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -35106,48 +34322,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ZoneAirCOSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone Air Carbon Monoxide Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirCOSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ZoneAirNO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone Air NO2 Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirNO2Sensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ZoneAirTVOCSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone Air TVOC Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirTVOCSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:AbsenceSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -35324,20 +34498,6 @@
     "extends": [
       "dtmi:com:willowinc:AirPressureSensor;1",
       "dtmi:com:willowinc:DeltaPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:AirEnthalpySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Air Enthalpy Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnthalpySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -36624,6 +35784,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BilledNaturalGasEnergy;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Natural Gas Energy"
+    },
+    "description": {
+      "en": "The quantity of natural gas energy that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Natural Gas Energy Sensor which reports data on a more frequent interval."
+    },
+    "extends": [
+      "dtmi:com:willowinc:NaturalGasEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BilledNaturalGasMass;1",
     "@type": "Interface",
     "displayName": {
@@ -37054,23 +36231,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CloseSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Close Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027close\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OpenCloseSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CO2AirQualityAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -37335,34 +36495,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ComputerRoomAirConditioningUnit;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Computer Room Air Conditioning (CRAC) Unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanCoilUnit;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ComputerRoomAirHandlingUnit;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Computer Room Air Handling (CRAH) Unit"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanCoilUnit;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CondenserLeavingRefrigerantTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -37465,23 +36597,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ContactSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Contact Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027contact\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OpenCloseSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ControlsSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -37523,6 +36638,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:OnLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CoolingLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Cooling Level State"
+    },
+    "description": {
+      "en": "The \u0027on\u0027 level feedback from a state associated with cooling"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -37732,23 +36864,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DamperPositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Damper Position Sensor"
-    },
-    "description": {
-      "en": "The damper position percent feedback from a sensor associated"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PositionSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DCElectricalSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -37777,23 +36892,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DefaultSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Default Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027default\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DefaultOverrideSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DefrostTerminationTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -37804,21 +36902,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:TemperatureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DeltaAirPressureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Delta Air Pressure Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirPressureSensor;1",
-      "dtmi:com:willowinc:DeltaPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -37853,21 +36936,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:PressureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DeltaWaterPressureSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Delta Water Pressure Sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterPressureSensor;1",
-      "dtmi:com:willowinc:DeltaPressureSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -37976,23 +37044,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DischargeAirCO2AirQualitySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air CO2 Air Quality Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from an alarm associated with the discharge (supply) air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DischargeAirCO2Sensor;1",
     "@type": "Interface",
     "displayName": {
@@ -38071,23 +37122,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeAirQualityCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Quality CO2 Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the discharge (supply) air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -38850,23 +37884,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnableDisableSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Enable/Disable Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027enable\u0027 is \u0027true\u0027 and \u0027disable\u0027 is \u0027off\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OnOffSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnableState;1",
     "@type": "Interface",
     "displayName": {
@@ -38953,23 +37970,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ExhaustAirCO2AirQualitySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air CO2 Air Quality Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the exhaust air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ExhaustAirCO2Sensor;1",
     "@type": "Interface",
     "displayName": {
@@ -39048,23 +38048,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustAirQualityCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Quality CO2 Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the exhaust air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -39283,23 +38266,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:VFDFrequencySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FaultSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fault Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027fault\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:NormalFaultSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -39842,6 +38808,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HeatingLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Heating Level State"
+    },
+    "description": {
+      "en": "The \u0027on\u0027 level feedback from a state associated with heating"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OnLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeatingOnActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -40246,23 +39229,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:InletAirCO2AirQualitySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air CO2 Air Quality Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the inlet air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:InletAirCO2Sensor;1",
     "@type": "Interface",
     "displayName": {
@@ -40341,23 +39307,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:InletAirQualityCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air Quality CO2 Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the inlet air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -40595,23 +39544,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:LoadLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Load Level Sensor"
-    },
-    "description": {
-      "en": "The load level feedback from a sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LevelSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:LoadShedOverrideActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -40773,23 +39705,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MixedAirCO2AirQualitySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Air CO2 Air Quality Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the mixed air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MixedAirCO2Sensor;1",
     "@type": "Interface",
     "displayName": {
@@ -40868,23 +39783,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedAirQualityCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Air Quality CO2 Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the mixed air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41158,23 +40056,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:NormalSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Normal Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027normal\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:NormalFaultSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:NOxAirQualityAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -41330,40 +40211,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OffSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Off Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027off\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OnOffSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OnLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "On Level Sensor"
-    },
-    "description": {
-      "en": "The \u0027on\u0027 level feedback from a sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LevelSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:OnOffSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -41371,23 +40218,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:BinarySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OnSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "On Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027on\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OnOffSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41419,40 +40249,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:BinarySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OpenSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Open Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027open\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OpenCloseSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirCO2AirQualitySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air CO2 Air Quality Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the outside air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -41545,23 +40341,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OutsideAirQualityCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Quality CO2 Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the outside air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:OutsideAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -41572,23 +40351,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OverrideSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Override Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027override\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DefaultOverrideSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -42501,6 +41263,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerantTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigerant Temperature Setpoint"
+    },
+    "description": {
+      "en": "The desired value associated with refrigerant temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:RefrigeratedFoodDisplayCase;1",
     "@type": "Interface",
     "displayName": {
@@ -42520,10 +41299,152 @@
         },
         "name": "evaporatorFan",
         "schema": "dtmi:com:willowinc:Fan;1"
+      },
+      {
+        "@type": [
+          "Property",
+          "Temperature"
+        ],
+        "name": "designDefrostTerminationTemperature",
+        "displayName": {
+          "en": "Design Defrost Termination Temperature"
+        },
+        "description": {
+          "en": "The temperature setpoint at which a defrost cycle is set to stop running, typically on an evaporator coil."
+        },
+        "schema": "double",
+        "unit": "degreeCelsius"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Defrost Termination Temperature Unit"
+        },
+        "name": "defrostTerminationTemperatureUnit",
+        "annotates": "defrostTerminationTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "TimeSpan"
+        ],
+        "name": "defrostStartInterval",
+        "displayName": {
+          "en": "Defrost Start Interval"
+        },
+        "description": {
+          "en": "The time interval between the start of each defrost cycle, typically defined in hours, when the controls are configured to start defrost based on a set time interval."
+        },
+        "schema": "double",
+        "unit": "hour"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Defrost Start Interval Unit"
+        },
+        "name": "defrostStartIntervalUnit",
+        "annotates": "defrostStartInterval",
+        "overrides": "unit",
+        "schema": "TimeUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "TimeSpan"
+        ],
+        "name": "defrostMaxDuration",
+        "displayName": {
+          "en": "Defrost Max Duration"
+        },
+        "description": {
+          "en": "The duration, typically defined in minutes, from the start to the end of a defrost cycle."
+        },
+        "schema": "double",
+        "unit": "minute"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Defrost Max Duration Unit"
+        },
+        "name": "defrostMaxDurationUnit",
+        "annotates": "defrostMaxDuration",
+        "overrides": "unit",
+        "schema": "TimeUnit"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Defrost Start Method"
+        },
+        "name": "defrostStartMethod",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Interval Timer",
+              "name": "IntervalTimer"
+            },
+            {
+              "enumValue": "Schedule",
+              "name": "Schedule"
+            },
+            {
+              "enumValue": "Adaptive",
+              "name": "Adaptive"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Defrost Stop Method"
+        },
+        "name": "defrostStopMethod",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Time",
+              "name": "Time"
+            },
+            {
+              "enumValue": "Termination Temperature",
+              "name": "TerminationTemperature"
+            },
+            {
+              "enumValue": "Adaptive",
+              "name": "Adaptive"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
       }
     ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -42538,9 +41459,137 @@
     "extends": [
       "dtmi:com:willowinc:RefrigerationEquipmentGroup;1"
     ],
-    "contents": [],
+    "contents": [
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Defrost Termination Temperature Unit"
+        },
+        "name": "defrostTerminationTemperatureUnit",
+        "annotates": "defrostTerminationTemperature",
+        "overrides": "unit",
+        "schema": "TemperatureUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "TimeSpan"
+        ],
+        "name": "defrostStartInterval",
+        "displayName": {
+          "en": "Defrost Start Interval"
+        },
+        "description": {
+          "en": "The time interval between the start of each defrost cycle, typically defined in hours, when the controls are configured to start defrost based on a set time interval."
+        },
+        "schema": "double",
+        "unit": "hour"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Defrost Start Interval Unit"
+        },
+        "name": "defrostStartIntervalUnit",
+        "annotates": "defrostStartInterval",
+        "overrides": "unit",
+        "schema": "TimeUnit"
+      },
+      {
+        "@type": [
+          "Property",
+          "TimeSpan"
+        ],
+        "name": "defrostMaxDuration",
+        "displayName": {
+          "en": "Defrost Max Duration"
+        },
+        "description": {
+          "en": "The duration, typically defined in minutes, from the start to the end of a defrost cycle."
+        },
+        "schema": "double",
+        "unit": "minute"
+      },
+      {
+        "@type": [
+          "Property",
+          "ValueAnnotation",
+          "Override"
+        ],
+        "displayName": {
+          "en": "Defrost Max Duration Unit"
+        },
+        "name": "defrostMaxDurationUnit",
+        "annotates": "defrostMaxDuration",
+        "overrides": "unit",
+        "schema": "TimeUnit"
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Defrost Start Method"
+        },
+        "name": "defrostStartMethod",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Interval Timer",
+              "name": "IntervalTimer"
+            },
+            {
+              "enumValue": "Schedule",
+              "name": "Schedule"
+            },
+            {
+              "enumValue": "Adaptive",
+              "name": "Adaptive"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      },
+      {
+        "@type": "Property",
+        "displayName": {
+          "en": "Defrost Stop Method"
+        },
+        "name": "defrostStopMethod",
+        "schema": {
+          "@type": "Enum",
+          "enumValues": [
+            {
+              "enumValue": "Time",
+              "name": "Time"
+            },
+            {
+              "enumValue": "Termination Temperature",
+              "name": "TerminationTemperature"
+            },
+            {
+              "enumValue": "Adaptive",
+              "name": "Adaptive"
+            }
+          ],
+          "valueSchema": "string"
+        },
+        "writable": true
+      }
+    ],
     "@context": [
-      "dtmi:dtdl:context;3"
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
     ]
   },
   {
@@ -42616,23 +41665,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:HumiditySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefAirCO2AirQualitySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air CO2 Air Quality Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the relief air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -42725,23 +41757,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefAirQualityCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Quality CO2 Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the relief air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReliefAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -42783,23 +41798,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DefaultActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirCO2AirQualitySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air CO2 Air Quality Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the return air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -42913,23 +41911,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirHumiditySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirQualityCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Quality CO2 Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the return air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -43059,23 +42040,6 @@
     "extends": [
       "dtmi:com:willowinc:RunStopState;1",
       "dtmi:com:willowinc:StartState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:RunStopSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Run/Stop Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027run\u0027 is \u0027true\u0027 and \u0027stop\u0027 is \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StartStopSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -43413,40 +42377,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:StartLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Start Level Sensor"
-    },
-    "description": {
-      "en": "The start level feedback from a sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:LevelSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:StartSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Start Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027start\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StartStopSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -44219,23 +43149,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ValvePositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Valve Position Sensor"
-    },
-    "description": {
-      "en": "The valve position percent feedback from a sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:PositionSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:VariableFrequencyDrive;1",
     "@type": "Interface",
     "displayName": {
@@ -44853,23 +43766,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ZoneAirCO2AirQualitySensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone Air CO2 Air Quality Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the zone air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ZoneAirCO2Sensor;1",
     "@type": "Interface",
     "displayName": {
@@ -44921,23 +43817,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ZoneAirQualityCO2Sensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone Air Quality CO2 Sensor"
-    },
-    "description": {
-      "en": "The air quality (CO2) feedback from a sensor associated with the zone air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ZoneAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -44948,34 +43827,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ZoneAirTVOCSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone Air TVOC Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirTVOCSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ZoneCO2Setpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone CO2 Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirCO2Setpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -45436,13 +44287,30 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:BilledActiveElectricalDemand;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Active Electrical Demand"
+    },
+    "description": {
+      "en": "The quantity of electrical demand power that is billed to a utility account, typically on a monthly basis, which is typically measured in kW. "
+    },
+    "extends": [
+      "dtmi:com:willowinc:ActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BilledActiveElectricalEnergy;1",
     "@type": "Interface",
     "displayName": {
       "en": "Billed Active Electrical Energy"
     },
     "description": {
-      "en": "The quantity of active electrical energy that is billed to a utility account, typically on a monthly basis. This distinguishes from a typical Active Electrical Energy Sensor which reports data on a more frequent interval."
+      "en": "The quantity of active electrical energy that is billed to a utility account, typically on a monthly basis, which is typically measured in kWh. This distinguishes from a typical Active Electrical Energy Sensor which reports data on a more frequent interval."
     },
     "extends": [
       "dtmi:com:willowinc:ActiveElectricalEnergySensor;1"
@@ -45463,6 +44331,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:BilledThermalEnergy;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BilledElectricalDeliveryCost;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Electrical Delivery Cost"
+    },
+    "description": {
+      "en": "The billed electrical cost trend associated with the delivery of electricity, typically on a monthly basis."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BilledElectricalCost;1"
     ],
     "contents": [],
     "@context": [
@@ -45494,6 +44379,23 @@
     },
     "description": {
       "en": "The billed electrical cost trend associated with energy consumption, typically on a monthly basis."
+    },
+    "extends": [
+      "dtmi:com:willowinc:BilledElectricalCost;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BilledElectricalSupplyCost;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Billed Electrical Supply Cost"
+    },
+    "description": {
+      "en": "The billed electrical cost trend associated with the generation (a.k.a. supply) of electricity, typically on a monthly basis."
     },
     "extends": [
       "dtmi:com:willowinc:BilledElectricalCost;1"
@@ -45838,23 +44740,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterBypassValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Valve Bypass Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the chilled water bypass valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterCoilLeavingAirTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -45882,23 +44767,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterDeltaPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterEnteringValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Entering Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the entering chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -45957,23 +44825,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterHeaderValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Header Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the chilled water header valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -46025,23 +44876,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterValveLeavingPositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Valve Leaving Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the leaving chilled water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterValveOpenActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -46069,23 +44903,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:ValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterValvePositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Valve Position Sensor"
-    },
-    "description": {
-      "en": "The valve position percent feedback from a sensor associated with chilled water"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValvePositionSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -46307,16 +45124,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterBypassValvePositionActuator;1",
+    "@id": "dtmi:com:willowinc:CondenserLeavingRefrigerantTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Condenser Water Bypass Valve Position Actuator"
+      "en": "Condenser Leaving Refrigerant Temperature Setpoint"
     },
     "description": {
-      "en": "The percent command which sets the position of the condenser water bypass valve"
+      "en": "The desired value associated with the temperature of the refrigerant leaving the condenser."
     },
     "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
+      "dtmi:com:willowinc:RefrigerantTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -46351,23 +45168,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterDeltaPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterEnteringValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Entering Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the entering condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -46419,40 +45219,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterHeaderValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Header Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the condenser water header valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterLeavingValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Leaving Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the leaving condenser water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -46545,23 +45311,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CondenserWaterValvePositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Valve Position Sensor"
-    },
-    "description": {
-      "en": "The valve position percent feedback from a sensor associated with condenser water"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValvePositionSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:CondimentCart;1",
     "@type": "Interface",
     "displayName": {
@@ -46624,23 +45373,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CoolingLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cooling Level Sensor"
-    },
-    "description": {
-      "en": "The \u0027on\u0027 level feedback from a sensor associated with cooling"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OnLevelSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DamperOpenCloseActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -46651,23 +45383,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:OpenCloseActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DamperOpenSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Damper Open Sensor"
-    },
-    "description": {
-      "en": "The Boolean damper status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OpenSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -46757,21 +45472,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DeltaAirPressureSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Delta Air Pressure Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirPressureSetpoint;1",
-      "dtmi:com:willowinc:DeltaPressureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DeltaChilledWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -46819,6 +45519,23 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSensor;1",
       "dtmi:com:willowinc:DeltaWaterTemperatureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DeltaRefrigerantTemperatureSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Refrigerant Temperature Setpoint"
+    },
+    "description": {
+      "en": "The feedback from a setpoint associated with differential temperature, tyipcally between the entering and leaving."
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantTemperatureSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -46877,21 +45594,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:DeltaWaterPressureSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Delta Water Pressure Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterPressureSetpoint;1",
-      "dtmi:com:willowinc:DeltaPressureSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DeltaWaterTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -46919,58 +45621,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DeltaPressureAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DisableSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Disable Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027disable\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnableDisableSensor;1",
-      "dtmi:com:willowinc:OffSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeAirCO2AirQualityAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air CO2 Air Quality Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the CO2 air quality associatd with the discharge (supply) air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeAirCO2AirQualitySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air CO2 Air Quality Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the discharge (supply) air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -47073,23 +45723,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeAirDamperPositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Air Damper Position Sensor"
-    },
-    "description": {
-      "en": "The damper position percent feedback from a sensor associated with discharge (supply) air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -47625,24 +46258,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:EnableSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Enable Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027enable\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:EnableDisableSensor;1",
-      "dtmi:com:willowinc:OnSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47952,40 +46567,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ExhaustAirCO2AirQualityAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air CO2 Air Quality Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the CO2 air quality associatd with the exhaust air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustAirCO2AirQualitySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air CO2 Air Quality Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the exhaust air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ExhaustAirCO2AlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -48081,23 +46662,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ExhaustAirDamperPositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Air Damper Position Sensor"
-    },
-    "description": {
-      "en": "The damper position percent feedback from a sensor associated with exhaust air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -48722,23 +47286,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HeatingLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Heating Level Sensor"
-    },
-    "description": {
-      "en": "The \u0027on\u0027 level feedback from a sensor associated with heating"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OnLevelSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HighAirFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -48991,23 +47538,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HotWaterBypassValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Bypass Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the hot water bypass valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HotWaterDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -49018,23 +47548,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterDeltaPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterEnteringValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Entering Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the entering hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -49086,40 +47599,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterHeaderValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Header Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the hot water header valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterLeavingValvePositionActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Leaving Valve Position Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the position of the leaving hot water valve"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterValvePositionActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -49205,23 +47684,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:ValveOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterValvePositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Valve Position Sensor"
-    },
-    "description": {
-      "en": "The valve position percent feedback from a sensor associated with hot water"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValvePositionSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -49327,40 +47789,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:InletAirCO2AirQualityAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air CO2 Air Quality Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the CO2 air quality associatd with the inlet air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:InletAirCO2AirQualitySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air CO2 Air Quality Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the inlet air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:InletAirCO2AlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -49456,23 +47884,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:InletAirDamperPositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Inlet Air Damper Position Sensor"
-    },
-    "description": {
-      "en": "The damper position percent feedback from a sensor associated with inlet air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -50245,40 +48656,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MixedAirCO2AirQualityAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Air CO2 Air Quality Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the CO2 air quality associatd with the mixed air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedAirCO2AirQualitySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Air CO2 Air Quality Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the mixed air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MixedAirCO2AlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -50731,40 +49108,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:OutsideAirCO2AirQualityAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air CO2 Air Quality Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the CO2 air quality associatd with the outside air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirCO2AirQualitySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air CO2 Air Quality Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the outside air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:OutsideAirCO2AlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -50860,37 +49203,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirDamperPositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Damper Position Sensor"
-    },
-    "description": {
-      "en": "The damper position percent feedback from a sensor associated with outside air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideAirEnthalpySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Air Enthalpy Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirEnthalpySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -51498,6 +49810,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PreheatLevelState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Preheating Level State"
+    },
+    "description": {
+      "en": "The \u0027on\u0027 level feedback from a state associated with preheating"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HeatingLevelState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PresenceSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -51505,6 +49834,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PresenceAbsenceSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PressureReliefValveOpenState;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Relief Valve Open State"
+    },
+    "description": {
+      "en": "The Boolean state of the pressure relief valve which is \u0027open\u0027 when \u0027true\u0027"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ValveOpenState;1"
     ],
     "contents": [],
     "@context": [
@@ -51742,33 +50088,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefAirCO2AirQualityAlarmState;1",
+    "@id": "dtmi:com:willowinc:ReheatLevelState;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Relief Air CO2 Air Quality Alarm State"
+      "en": "Reheating Level State"
     },
     "description": {
-      "en": "The Boolean state of the CO2 air quality associatd with the relief air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
+      "en": "The \u0027on\u0027 level feedback from a state associated with reheating"
     },
     "extends": [
-      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefAirCO2AirQualitySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air CO2 Air Quality Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the relief air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
+      "dtmi:com:willowinc:HeatingLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -51871,23 +50200,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReliefAirDamperPositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Air Damper Position Sensor"
-    },
-    "description": {
-      "en": "The damper position percent feedback from a sensor associated with relief air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -52014,57 +50326,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ResetSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Reset Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027reset\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DefaultSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirCO2AirQualityAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air CO2 Air Quality Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the CO2 air quality associatd with the return air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirCO2AirQualitySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air CO2 Air Quality Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the return air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReturnAirCO2AlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -52167,23 +50428,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReturnAirDamperPositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Damper Position Sensor"
-    },
-    "description": {
-      "en": "The damper position percent feedback from a sensor associated with return air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DamperPositionSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReturnAirDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -52194,20 +50438,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirDeltaPressureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnAirEnthalpySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Air Enthalpy Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:AirEnthalpySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -52392,41 +50622,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:StartActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:RunLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Run Level Sensor"
-    },
-    "description": {
-      "en": "The run level feedback from a sensor"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StartLevelSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:RunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunStopSensor;1",
-      "dtmi:com:willowinc:StartSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -52794,24 +50989,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:StopSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Stop Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor where \u0027stop\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:StartStopSensor;1",
-      "dtmi:com:willowinc:RunStopSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:StormDrainageSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -53132,23 +51309,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ValveOpenSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Valve Open Sensor"
-    },
-    "description": {
-      "en": "The Boolean valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OpenSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -53301,40 +51461,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:PlumbingWaterSystem;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ZoneAirCO2AirQualityAlarmState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone Air CO2 Air Quality Alarm State"
-    },
-    "description": {
-      "en": "The Boolean state of the CO2 air quality associatd with the zone air which is \u0027alarm\u0027 when \u0027true\u0027 and \u0027normal\u0027 when \u0027false\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualityAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ZoneAirCO2AirQualitySetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Zone Air CO2 Air Quality Setpoint"
-    },
-    "description": {
-      "en": "The desired value associated with carbon dioxide (CO2) air quality associated with the zone air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CO2AirQualitySetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -54003,23 +52129,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterValveOpenSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Valve Open Sensor"
-    },
-    "description": {
-      "en": "The Boolean chilled water valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValveOpenSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -54081,23 +52190,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CompressorRunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Compressor Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean compressor status from a sensor where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -54184,23 +52276,6 @@
     "extends": [
       "dtmi:com:willowinc:CondenserWaterTemperatureSetpoint;1",
       "dtmi:com:willowinc:DeadbandSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterValveOpenSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Valve Open Sensor"
-    },
-    "description": {
-      "en": "The Boolean condenser water valve status from a sensor associated where \u0027open\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ValveOpenSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -55603,40 +53678,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:FanRunLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fan Run Level Sensor"
-    },
-    "description": {
-      "en": "The run level feedback from a sensor associated with a fan"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunLevelSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FanRunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fan Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean fan status from a sensor where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:FanVFDRunLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -55648,23 +53689,6 @@
     "extends": [
       "dtmi:com:willowinc:FanRunLevelActuator;1",
       "dtmi:com:willowinc:VFDRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:FaultResetSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Fault Reset Sensor"
-    },
-    "description": {
-      "en": "The Boolean status from a sensor associated with fault where \u0027reset\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ResetSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -58265,23 +56289,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MinOutsideAirDamperPositionSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Outside Air Damper Position Sensor"
-    },
-    "description": {
-      "en": "The damper position percent feedback from a sensor associated with minimum outside air"
-    },
-    "extends": [
-      "dtmi:com:willowinc:OutsideAirDamperPositionSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MinOutsideAirFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -59891,23 +57898,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PreheatLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Preheating Level Sensor"
-    },
-    "description": {
-      "en": "The \u0027on\u0027 level feedback from a sensor associated with preheating"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HeatingLevelSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PrimaryLoopChilledWaterDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -60435,23 +58425,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:PumpRunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Pump Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean pump status from a sensor associated where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:PumpVFDRunLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -60497,23 +58470,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:CoilLeavingWaterTemperatureSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReheatLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Reheating Level Sensor"
-    },
-    "description": {
-      "en": "The \u0027on\u0027 level feedback from a sensor associated with reheating"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HeatingLevelSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -62816,23 +60772,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:VFDRunLevelSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "VFD Run Level Sensor"
-    },
-    "description": {
-      "en": "The run level feedback from a sensor associated with a VFD"
-    },
-    "extends": [
-      "dtmi:com:willowinc:RunLevelSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:WarmupDischargeAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -62942,6 +60881,108 @@
     },
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being discharged from the battery system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryExportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Export Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being discharged by a battery system"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryExportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Export Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power being discharged by a battery system"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryExportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Export Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power being discharged by a battery system"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being charged by the battery system."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BatteryNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Battery Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The net active electrical energy being consumed by the battery system which is the difference between import and export."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -63339,20 +61380,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:CoolingDischargeAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Cooling Discharge Air Flow Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:DischargeAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -63414,23 +61441,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:DischargeFanRunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Discharge Fan Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean fan status from a sensor associated with discharge (supply) air where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -63724,23 +61734,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ExhaustFanRunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Exhaust Fan Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean fan status from a sensor associated with exhaust air where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ExhaustFanVFDRunLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -63913,20 +61906,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:SteamPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HeatingDischargeAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Heating Discharge Air Flow Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -64900,6 +62879,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LoadImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Load Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The active electrical Energy being imported and consumed by the load, typically from an inverter."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LoadImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Load Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being imported by the load, typically from an inverter."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowBypassChilledWaterFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -65591,34 +63604,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:MaxDischargeAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Maximum Discharge Air Flow Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MaxDischargeFanAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Maximum Discharge Air Flow Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:MediumSpeedFanRunActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -65629,34 +63614,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MinDischargeAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Discharge Air Flow Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MinDischargeFanAirFlowSetpoint;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Minimum Discharge Fan Air Flow Setpoint"
-    },
-    "extends": [
-      "dtmi:com:willowinc:DischargeAirFlowSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -65759,23 +63716,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:MixedFanRunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Mixed Fan Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean fan status from a sensor associated with mixed air where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -65932,23 +63872,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:OutsideFanRunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Outside Fan Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean fan status from a sensor associated with outside air where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -66479,23 +64402,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ReliefFanRunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Relief Fan Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean fan status from a sensor associated with relief air where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunSensor;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ReliefFanVFDRunLevelActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66541,6 +64447,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:TotalExportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RenewableExportApparentElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Export Apparent Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The apparent electrical power feedback from a sensor associated with renewable export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportApparentElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RenewableExportReactiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Renewable Export Reactive Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The reactive electrical power feedback from a sensor associated with renewable export"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportReactiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -66677,23 +64617,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:FanRunActuatorCommandStatusMismatchAlarmState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ReturnFanRunSensor;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Return Fan Run Sensor"
-    },
-    "description": {
-      "en": "The Boolean fan status from a sensor associated with return air where \u0027run\u0027 is \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:FanRunSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -67105,266 +65028,6 @@
     "extends": [
       "dtmi:com:willowinc:HeatingZoneAirTemperatureSetpoint;1",
       "dtmi:com:willowinc:StandbyHeatingSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamBypassPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Bypass Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the steam bypass pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamBypassPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Bypass Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the steam pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamBypassPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Bypass Pump Run Level State"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamBypassPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Bypass Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the steam bypass pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamEnteringPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Entering Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the steam entering pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamEnteringPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Entering Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the steam entering pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamEnteringPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Entering Pump Run Level State"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamEnteringPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Entering Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the steam entering pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamHeaderPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Header Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the steam header pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamHeaderPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Header Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the steam header pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamHeaderPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Header Pump Run Level State"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamHeaderPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Header Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the steam header pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamLeavingPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Leaving Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the steam leaving pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamLeavingPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Leaving Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the steam leaving pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamLeavingPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Leaving Pump Run Level State"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:SteamLeavingPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Steam Leaving Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the steam leaving pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:SteamPumpRunState;1"
     ],
     "contents": [],
     "@context": [
@@ -67851,6 +65514,74 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:UtilityExportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Utility Export Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being exported from the site when power is being sent to the utility grid (a negative utility import power)."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalExportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UtilityImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Utility Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being consumed by the site when power is being imported from the utility grid."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UtilityImportActiveElectricalPowerSensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Utility Import Active Electrical Power Sensor"
+    },
+    "description": {
+      "en": "The active electrical power being imported from the utility grid. A positive value indicates net site consumption whereas a negative number indicates net site export."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:UtilityNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Utility Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The net active electrical energy being consumed by the site which is the difference between the Net and export."
+    },
+    "extends": [
+      "dtmi:com:willowinc:TotalNetActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:VFDRunLevelSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -67861,74 +65592,6 @@
     },
     "extends": [
       "dtmi:com:willowinc:RunLevelSetpoint;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Water Entering Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Water Entering Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the entering water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Water Leaving Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the leaving water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Water Leaving Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the leaving water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:WaterPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -68261,282 +65924,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Bypass Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the chilled water bypass pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Bypass Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the chilled water bypass pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Bypass Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the chilled water bypass pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Bypass Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the chilled water bypass pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Entering Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the entering chilled water pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Entering Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering chilled water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Entering Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the entering chilled water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Entering Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the entering chilled water pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Header Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the chilled water header pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Header Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the chilled water header pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Header Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the chilled water header pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Header Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the chilled water header pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Leaving Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the leaving chilled water pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Leaving Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the leaving chilled water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Leaving Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the leaving chilled water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Leaving Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the leaving chilled water pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:ChilledWaterPumpRunActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -68565,282 +65952,6 @@
     "extends": [
       "dtmi:com:willowinc:PumpVFDRunLevelActuator;1",
       "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Bypass Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the condenser water bypass pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Bypass Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the condenser water bypass pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Bypass Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the condenser water bypass pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Bypass Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the condenser water bypass pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Entering Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the entering condenser water pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Entering Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering condenser water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Entering Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the entering condenser water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Entering Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the entering condenser water pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Header Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the condenser water header pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Header Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the condenser water header pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Header Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the condenser water header pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Header Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the condenser water header pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Leaving Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the leaving condenser water pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Leaving Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the leaving condenser water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Leaving Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the leaving condenser water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Leaving Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the leaving condenser water pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpRunState;1"
     ],
     "contents": [],
     "@context": [
@@ -68927,7 +66038,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:EnteringWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -68945,7 +66056,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
+      "dtmi:com:willowinc:EnteringWaterPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -69014,7 +66125,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:EnteringWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -69032,7 +66143,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
+      "dtmi:com:willowinc:EnteringWaterPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -69101,7 +66212,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:EnteringWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -69119,7 +66230,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
+      "dtmi:com:willowinc:EnteringWaterPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -69928,282 +67039,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:HotWaterBypassPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Bypass Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the hot water bypass pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterBypassPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Bypass Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the hot water bypass pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterBypassPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Bypass Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the hot water bypass pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterBypassPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Bypass Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the hot water bypass pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterEnteringPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Entering Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the entering hot water water pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterEnteringPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Entering Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering hot water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterEnteringPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Entering Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the entering hot water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterEnteringPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterEnteringPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Entering Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the entering hot water pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterHeaderPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Header Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the hot water header pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterHeaderPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Header Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the hot water header pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterHeaderPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Header Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the hot water header pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterHeaderPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Header Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the hot water header pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterLeavingPumpRunActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Leaving Pump Run Actuator"
-    },
-    "description": {
-      "en": "The Boolean command which sets the state of the leaving hot water pump to \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterLeavingPumpRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Leaving Pump Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the leaving hot water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterLeavingPumpRunLevelState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Leaving Pump Run Level State"
-    },
-    "description": {
-      "en": "The percent run level state of the leaving hot water pump"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterLeavingPumpRunState;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Leaving Pump Run State"
-    },
-    "description": {
-      "en": "The Boolean state of the leaving hot water pump which is \u0027run\u0027 when \u0027true\u0027"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpRunState;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:HotWaterPumpRunActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -70266,7 +67101,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:LeavingWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -70284,7 +67119,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:ChilledWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
+      "dtmi:com:willowinc:LeavingWaterPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -70353,7 +67188,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:LeavingWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -70371,7 +67206,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:CondenserWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
+      "dtmi:com:willowinc:LeavingWaterPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -70440,7 +67275,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:LeavingWaterPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
@@ -70458,7 +67293,7 @@
     },
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpRunLevelState;1",
-      "dtmi:com:willowinc:WaterLeavingPumpRunLevelState;1"
+      "dtmi:com:willowinc:LeavingWaterPumpRunLevelState;1"
     ],
     "contents": [],
     "@context": [
@@ -71196,17 +68031,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SteamBypassPumpVFDRunLevelActuator;1",
+    "@id": "dtmi:com:willowinc:SolarExportActiveElectricalEnergySensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Steam Bypass Pump VFD Run Level Actuator"
+      "en": "Solar Export Active Electrical Energy Sensor"
     },
     "description": {
-      "en": "The percent command which sets the run level of the steam pump vfd"
+      "en": "The cummulative active electrical energy being generated by solar photovoltaic"
     },
     "extends": [
-      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:SteamBypassPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:RenewableExportActiveElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -71214,17 +68048,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SteamEnteringPumpVFDRunLevelActuator;1",
+    "@id": "dtmi:com:willowinc:SolarExportActiveElectricalPowerSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Steam Entering Pump VFD Run Level Actuator"
+      "en": "Solar Export Active Electrical Power Sensor"
     },
     "description": {
-      "en": "The percent command which sets the run level of the steam entering pump vfd"
+      "en": "The active electrical power being generated by solar photovoltaic"
     },
     "extends": [
-      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:SteamEnteringPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:RenewableExportActiveElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -71232,17 +68065,16 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SteamHeaderPumpVFDRunLevelActuator;1",
+    "@id": "dtmi:com:willowinc:SolarExportApparentElectricalPowerSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Steam Header Pump VFD Run Level Actuator"
+      "en": "Solar Export Apparent Electrical Power Sensor"
     },
     "description": {
-      "en": "The percent command which sets the run level of the steam header pump vfd"
+      "en": "The apparent electrical power being generated by solar photovoltaic"
     },
     "extends": [
-      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:SteamHeaderPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:RenewableExportApparentElectricalPowerSensor;1"
     ],
     "contents": [],
     "@context": [
@@ -71250,17 +68082,50 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:SteamLeavingPumpVFDRunLevelActuator;1",
+    "@id": "dtmi:com:willowinc:SolarExportReactiveElectricalPowerSensor;1",
     "@type": "Interface",
     "displayName": {
-      "en": "Steam Leaving Pump VFD Run Level Actuator"
+      "en": "Solar Export Reactive Electrical Power Sensor"
     },
     "description": {
-      "en": "The percent command which sets the run level of the steam leaving pump vfd"
+      "en": "The reactive electrical power being generated by solar photovoltaic"
     },
     "extends": [
-      "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:SteamLeavingPumpRunLevelActuator;1"
+      "dtmi:com:willowinc:RenewableExportReactiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SolarImportActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Import Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The cummulative active electrical energy being consumed by solar photovoltaic"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RenewableImportActiveElectricalEnergySensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SolarNetActiveElectricalEnergySensor;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Solar Net Active Electrical Energy Sensor"
+    },
+    "description": {
+      "en": "The net active electrical energy being consumed by the solar pholtatic which is the difference between the import and export.)"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RenewableNetActiveElectricalEnergySensor;1"
     ],
     "contents": [],
     "@context": [
@@ -71492,150 +68357,6 @@
     ]
   },
   {
-    "@id": "dtmi:com:willowinc:ChilledWaterBypassPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Bypass Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the chilled water bypass pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:ChilledWaterBypassPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterEnteringPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Entering Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering chilled water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:ChilledWaterEnteringPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterHeaderPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Header Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the chilled water header pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:ChilledWaterHeaderPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:ChilledWaterLeavingPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Chilled Water Leaving Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the leaving chilled water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:ChilledWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:ChilledWaterLeavingPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterBypassPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Bypass Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the condenser water bypass pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:CondenserWaterBypassPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterEnteringPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Entering Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering condenser water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:CondenserWaterEnteringPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterHeaderPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Header Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the condenser water header pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:CondenserWaterHeaderPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:CondenserWaterLeavingPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Condenser Water Leaving Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the leaving condenser water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:CondenserWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:CondenserWaterLeavingPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterPumpRunActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -71839,78 +68560,6 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
       "dtmi:com:willowinc:HeaderHotWaterPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterBypassPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Bypass Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the hot water bypass pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:HotWaterBypassPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterEnteringPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Entering Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the entering hot water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:HotWaterEnteringPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterHeaderPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Header Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the hot water header pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:HotWaterHeaderPumpRunLevelActuator;1"
-    ],
-    "contents": [],
-    "@context": [
-      "dtmi:dtdl:context;3"
-    ]
-  },
-  {
-    "@id": "dtmi:com:willowinc:HotWaterLeavingPumpVFDRunLevelActuator;1",
-    "@type": "Interface",
-    "displayName": {
-      "en": "Hot Water Leaving Pump VFD Run Level Actuator"
-    },
-    "description": {
-      "en": "The percent command which sets the run level of the leaving hot water pump vfd"
-    },
-    "extends": [
-      "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
-      "dtmi:com:willowinc:HotWaterLeavingPumpRunLevelActuator;1"
     ],
     "contents": [],
     "@context": [
