@@ -2335,6 +2335,14 @@
       },
       {
         "@type": "Relationship",
+        "displayName": {
+          "en": "located in"
+        },
+        "name": "locatedIn",
+        "target": "dtmi:com:willowinc:Space;1"
+      },
+      {
+        "@type": "Relationship",
         "description": {
           "en": "Indicates that a Space or Asset is served by some Sensor/Actuator or other Asset. For example: an entrance room might be served by (e.g., covered by) some camera equipment, or a conference room served by a CO2 sensor. Note that Assets can also service one another, e.g., an air-treatment Asset might serve an air diffuser Asset. Inverse of: serves"
         },
@@ -23329,6 +23337,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AbsorptionChiller;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Absorption Chiller"
+    },
+    "extends": [
+      "dtmi:com:willowinc:Chiller;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3",
+      "dtmi:dtdl:extension:quantitativeTypes;1",
+      "dtmi:dtdl:extension:annotation;1",
+      "dtmi:dtdl:extension:overriding;1"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AccelerationSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -35398,6 +35423,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:BinarySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AllInOneDesktopComputer;1",
     "@type": "Interface",
     "displayName": {
@@ -43524,6 +43566,20 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WalkInRefrigerationEquipment;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Walk-In Refrigeration Equipment"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FoodStorageRefrigerationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WaterDeltaPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -44068,6 +44124,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:airport:AirfieldLightingSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -46212,6 +46285,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ElectricalPowerAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Electrical Power Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the electrical power alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:EmergencyAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Emergency Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the emergency alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EmergencyElectricaLPowerLossAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -47071,6 +47178,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderChilledWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -47691,6 +47815,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HVACChilledWaterSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -48024,6 +48165,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LeakAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Leak Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the leak alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingChilledWaterPressureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -48309,6 +48467,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:WaterTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -49329,6 +49504,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OverloadAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Overload Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the overload alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OverrideSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -49834,6 +50026,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:PresenceAbsenceSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -50643,6 +50852,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ShortCycleAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Short Cycle Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the short cycle alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SmokeDetector;1",
     "@type": "Interface",
     "displayName": {
@@ -50996,6 +51222,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DrainageSystem;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:TemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -51422,6 +51665,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:WalkInCooler;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Walk-In Cooler"
+    },
+    "description": {
+      "en": "A walk-in refrigeration unit used for foods or other products required to be refrigerated to medium-temperatures."
+    },
+    "extends": [
+      "dtmi:com:willowinc:WalkInRefrigerationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WalkInFreezer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Walk-In Freezer"
+    },
+    "description": {
+      "en": "A walk-in refrigeration unit used for foods or other products required to be refrigerated to low-temperatures."
+    },
+    "extends": [
+      "dtmi:com:willowinc:WalkInRefrigerationEquipment;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WasteVentDrainageSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -51673,6 +51950,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirFlowDeadbandSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -51684,6 +51978,23 @@
     "extends": [
       "dtmi:com:willowinc:AirFlowSetpoint;1",
       "dtmi:com:willowinc:DeadbandSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:AirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HumidityAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -51719,6 +52030,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:AirQualityIndexAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Air Quality Index Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the air quality index alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:AirStaticPressureDeadbandSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -51730,6 +52058,23 @@
     "extends": [
       "dtmi:com:willowinc:AirStaticPressureSetpoint;1",
       "dtmi:com:willowinc:DeadbandSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:BreakGlassAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Break Glass Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the break glass alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EmergencyAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -52043,6 +52388,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CH2OAirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Formaldehyde (CH2O) Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the formaldehyde (CH2O) air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterCoilEnteringWaterTemperatureSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -52156,6 +52518,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:ValvePositionSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "CO2 Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the CO2 air quality"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:COAirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Carbon Monoxide (CO) Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the carbon monoxide (CO) air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -52385,6 +52781,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CurrentAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Current Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the electrical current alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalPowerAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:CurrentOverloadAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Current Overload Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the current overload alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OverloadAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DamperCloseActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -52582,6 +53012,23 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterTemperatureSetpoint;1",
       "dtmi:com:willowinc:DeltaWaterTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DeltaPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Delta Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the delta pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -53747,6 +54194,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:FireAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fire Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the fire alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EmergencyAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HeaderChilledWaterFlowSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -54529,6 +54993,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighLineCurrentAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -54828,6 +55309,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighWaterLevelAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -55898,6 +56396,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowLineCurrentAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -56180,6 +56695,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowWaterTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:TemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -56578,6 +57110,57 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:NOxAirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Nitrogen Oxide (NOx) Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the nitrogen oxide (NOx) air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:O2AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Oxygen (O2) Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the oxygen (O2) air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:O3AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Ozone (O3) Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the ozone (O3) air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OccupancySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -56891,6 +57474,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:FilterAirDeltaPressureSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PbAirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Lead (Pb) Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the lead (Pb) air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -57833,6 +58433,74 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:PM001AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PM0.1 Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the PM0.1 air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PM010AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PM1.0 Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the PM1.0 air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PM025AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PM2.5 Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the PM2.5 air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PM10AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "PM10 Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the PM10 air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PreActionSprinklerSystem;1",
     "@type": "Interface",
     "displayName": {
@@ -58436,6 +59104,23 @@
     "extends": [
       "dtmi:com:willowinc:PumpRunLevelActuator;1",
       "dtmi:com:willowinc:VFDRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:RefrigerantLeakAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigerant Leak Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the refrigerant leak alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeakAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -59645,6 +60330,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:SmokeAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Smoke Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the smoke alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:EmergencyAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:SmokeCarbonMonoxideDetector;1",
     "@type": "Interface",
     "displayName": {
@@ -59654,6 +60356,40 @@
       "dtmi:com:willowinc:SmokeDetector;1",
       "dtmi:com:willowinc:CarbonMonoxideDetector;1"
     ],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SO2AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Sulfur Dioxide (SO2) Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the sulfur dioxide (SO2) air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:StaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:PressureAlarmSetpoint;1"
+    ],
+    "contents": [],
     "@context": [
       "dtmi:dtdl:context;3"
     ]
@@ -59670,6 +60406,23 @@
     "extends": [
       "dtmi:com:willowinc:SteamDeltaPressureSetpoint;1",
       "dtmi:com:willowinc:DeadbandSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:SteamFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Steam Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the steam flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FlowAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -60302,6 +61055,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ThermalOverloadAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Thermal Overload Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the thermal overload alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:OverloadAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:TotalActiveElectricalPowerDemandSensor;1",
     "@type": "Interface",
     "displayName": {
@@ -60659,6 +61429,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:TVOCAirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Total Volatile Organic Compound (TVOC) Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the total volatile organic compound (TVOC) air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:UnderfloorAirDeltaPressureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -60772,6 +61559,41 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:VoltageAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Voltage Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the voltage alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ElectricalPowerAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WalkInCombinationCoolerFreezer;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Walk-In Combination Cooler / Freezer"
+    },
+    "description": {
+      "en": "A walk-in refrigeration unit which is dual zoned for both low-temperature and medium-temperature applications."
+    },
+    "extends": [
+      "dtmi:com:willowinc:WalkInCooler;1",
+      "dtmi:com:willowinc:WalkInFreezer;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:WarmupDischargeAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -60782,6 +61604,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:DischargeAirTemperatureSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:WaterLeakAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Water Leak Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the water leak alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LeakAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -61178,6 +62034,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ChilledWaterPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -61295,6 +62168,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:CondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:CondenserWaterPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -61380,6 +62270,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DirtyFilterAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Dirty Filter Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the dirty filter alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DeltaPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirCO2AlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air CO2 Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the CO2 air quality associatd with the discharge (supply) air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:DischargeAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -61390,6 +62314,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirSmokeAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Smoke Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the discharge air smoke alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -61666,6 +62607,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ExhaustAirCO2AlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air CO2 Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the CO2 air quality associatd with the exhaust air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ExhaustAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -61676,6 +62634,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirSmokeAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Smoke Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the exhaust air smoke alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -61913,6 +62888,57 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighBypassChilledWaterFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -62102,6 +63128,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighCurrentAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Current Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high electrical current alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighDeltaChilledWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -62170,6 +63213,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighDewPointTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Dew Point Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighDryBulbTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Dry Bulb Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high dry bulb temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighEnteringChilledWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -62231,6 +63308,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighSteamTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighFeelsLikeTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Feels Like Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high feels like temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -62476,6 +63570,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Refrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high refrigerant temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighSecondaryLoopChilledWaterFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -62544,6 +63655,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighSteamFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Steam Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high steam flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSupplyStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Supply Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high supply static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:StaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighTertiaryLoopChilledWaterFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -62595,6 +63740,74 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighVoltageAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Voltage Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high voltage alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VoltageAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighWaterLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Water Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high water level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighLevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighWetBulbTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Wet Bulb Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high wet bulb temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterDeltaPressureDeadbandSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -62606,6 +63819,23 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterDeltaPressureSetpoint;1",
       "dtmi:com:willowinc:DeadbandSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:WaterFlowAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -62712,6 +63942,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:InletAirCO2AlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air CO2 Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the CO2 air quality associatd with the inlet air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:InletAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -62722,6 +63969,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InletAirSmokeAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air Smoke Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the inlet air smoke alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -62906,6 +64170,57 @@
     },
     "extends": [
       "dtmi:com:willowinc:TotalImportActiveElectricalPowerSensor;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:AirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowTemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -63102,6 +64417,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowCurrentAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Current Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low electrical current alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CurrentAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowDeltaChilledWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -63173,6 +64505,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowDewPointTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Dew Point Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low dew point temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowDryBulbTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Dry Bulb Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low dry bulb temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowEnteringChilledWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -63237,6 +64603,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowSteamTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowFeelsLikeTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Feels Like Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low feels like temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowFuelLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Fuel Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low fuel level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowLevelAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -63485,6 +64885,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Refrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low refrigerant temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowSecondaryLoopChilledWaterFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -63553,6 +64970,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowSteamFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Steam Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low steam flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SteamFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSuctionStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Suction Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low suction static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:StaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowTertiaryLoopChilledWaterFlowAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -63597,6 +65048,74 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowHotWaterFlowAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowVoltageAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Voltage Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low voltage alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:VoltageAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowWaterLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Water Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low water level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowLevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowWetBulbTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Wet Bulb Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low wet bulb temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowTemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -63665,6 +65184,40 @@
     },
     "extends": [
       "dtmi:com:willowinc:OutsideAirFlowSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirCO2AlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air CO2 Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the CO2 air quality associatd with the mixed air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirSmokeAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Smoke Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the mixed air smoke alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -63741,6 +65294,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:NO2AirQualityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Nitrogen Dioxide (NO2) Air Quality Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the nitrogen dioxide (NO2) air quality alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:NOxAirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OccupiedCoolingZoneAirTemperatureSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -63777,6 +65347,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:OutsideAirCO2AlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air CO2 Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the CO2 air quality associatd with the outside air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:OutsideAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -63787,6 +65374,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirSmokeAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Smoke Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the outside air smoke alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -64317,6 +65921,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:RefrigerantStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Refrigerant Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the refrigerant static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:StaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReheatLevelSetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -64334,6 +65955,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReliefAirCO2AlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air CO2 Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the CO2 air quality associatd with the relief air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReliefAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -64344,6 +65982,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefAirSmokeAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air Smoke Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the relief air smoke alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -64556,6 +66211,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ReturnAirCO2AlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air CO2 Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the CO2 air quality associatd with the return air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:ReturnAirDamperOpenActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -64566,6 +66238,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:DamperOpenActuatorCommandStatusMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirSmokeAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Smoke Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the return air smoke alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -65634,6 +67323,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:ZoneAirCO2AlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air CO2 Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the CO2 air quality associatd with the zone air"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CO2AirQualityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ZoneAirSmokeAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Zone Air Smoke Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the zone air smoke alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:SmokeAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:BypassChilledWaterPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66011,6 +67734,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeAirHighAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air High Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the discharge air high air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeAirLowAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Air Low Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the discharge air low air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterPumpRunActuator;1",
     "@type": "Interface",
     "displayName": {
@@ -66300,6 +68057,91 @@
     "extends": [
       "dtmi:com:willowinc:SteamPumpVFDRunLevelActuator;1",
       "dtmi:com:willowinc:EnteringSteamPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirHighAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air High Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the exhaust air high air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustAirLowAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Air Low Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the exhaust air low air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan High Supply Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the fan high supply static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighSupplyStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Fan Low Suction Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the fan low suction static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowSuctionStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:FinalFilterDirtyFilterAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Final Filter Dirty Filter Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the dirty filter alarm of the final filter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DirtyFilterAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -66597,6 +68439,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighBypassSteamFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Bypass Steam Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high bypass steam flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighSteamFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighChilledWaterCoilEnteringWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -66624,6 +68483,159 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighCoilLeavingWaterTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high chilled water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high water entering the coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high water leaving the coil"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCompressorEnteringRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Compressor Entering Refrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high refrigerant entering the compressor (suction) temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCompressorLeavingRefrigerantStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Compressor Leaving Refrigerant Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high compressor leaving refrigerant static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCompressorLeavingRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Compressor Leaving Refrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high refrigerant leaving the compressor (discharge) temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCondensateLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Condensate Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high condensate level"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterLevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCondenserLeavingRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Condenser Leaving Refrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high refrigerant leaving the condenser temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -66665,6 +68677,448 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high condenser water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCoolingCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Cooling Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high air leaving the cooling coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCoolingTowerBasinWaterLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Cooling Tower Basin Water Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high cooling tower basin water level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterLevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighDeltaWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Delta Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high water delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighDischargeAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Discharge Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high discharge air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighDischargeAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Discharge Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high discharge (supply) air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighEvaporatorEnteringRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High EvaporatorEnteringRefrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high refrigerant entering the evaporator temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighRefrigerantTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighExhaustAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Exhaust Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high exhaust air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighExhaustAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Exhaust Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high exhaust air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHeaderSteamFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Header Steam Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high header steam flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighSteamFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high hot water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighInletAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Inlet Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high inlet air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighInletAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Inlet Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high inlet air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLineCurrentAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Line Current Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high line (input) electrical current alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCurrentAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLineVoltageAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Line Voltage Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high line (input) voltage alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighVoltageAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLoadCurrentAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Load Current Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high load (output) electrical current alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCurrentAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLoadVoltageAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Load Voltage Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high load (output) voltage alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighVoltageAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighMakeupWaterTankLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Makeup Water Tank Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high makeup water tank level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterLevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighMixedAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Mixed Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high mixed air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighMixedAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Mixed Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high mixed air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighOutsideAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Outside Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high outside air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighOutsideAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Outside Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high outside air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighPreheatCoilEnteringWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -66675,6 +69129,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighCoilEnteringWaterTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPreheatCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Preheat Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high air leaving the preheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -66818,6 +69289,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighReheatCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Reheat Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high air leaving the reheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighReheatCoilLeavingWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -66828,6 +69316,74 @@
     },
     "extends": [
       "dtmi:com:willowinc:HighCoilLeavingWaterTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighReliefAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Relief Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high relief air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighReliefAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Relief Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high relief air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighReturnAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Return Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high return air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighReturnAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Return Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high return air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -66937,6 +69493,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high steam temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSumpLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Sump Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high sump level"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighWaterLevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HighTertiaryLoopEnteringChilledWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -67039,6 +69629,57 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighUnderfloorAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Underfloor Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high underfloor air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighZoneAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Zone Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high zone air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighZoneAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Zone Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high zone air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:HotWaterPumpRunActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -67067,6 +69708,40 @@
     "extends": [
       "dtmi:com:willowinc:PumpVFDRunLevelActuator;1",
       "dtmi:com:willowinc:HotWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InletAirHighAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air High Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the inlet air high air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:InletAirLowAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Inlet Air Low Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the inlet air low air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -67370,6 +70045,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowBypassSteamFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Bypass Steam Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low bypass steam flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowSteamFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowChilledWaterCoilEnteringWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -67397,6 +70089,142 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowCoilLeavingWaterTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:ChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low chilled water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low water entering the coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low water leaving the coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCompressorEnteringRefrigerantStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Compressor Entering Refrigerant Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low compressor entering refrigerant static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:RefrigerantStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCompressorEnteringRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Compressor Entering Refrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low refrigerant entering the compressor (suction) temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCompressorLeavingRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Compressor Leaving Refrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low refrigerant leaving the compressor (discharge) temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCondenserLeavingRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Condenser Leaving Refrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low refrigerant leaving the condenser temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -67438,6 +70266,448 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:CondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low condenser water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Cooling Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low air leaving the cooling coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCoolingTowerBasinWaterLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Cooling Tower Basin Water Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low cooling tower basin water level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterLevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowDeltaWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Delta Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low water delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowDischargeAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Discharge Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low discharge air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowDischargeAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Discharge Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low discharge (supply) air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowEvaporatorEnteringRefrigerantTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low EvaporatorEnteringRefrigerant Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low refrigerant entering the evaporator temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowRefrigerantTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowExhaustAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Exhaust Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low exhaust air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowExhaustAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Exhaust Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low exhaust air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHeaderSteamFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Header Steam Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low header steam flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowSteamFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low hot water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowInletAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Inlet Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low inlet air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowInletAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Inlet Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low inlet air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLineCurrentAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Line Current Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low line (input) electrical current alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCurrentAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLineVoltageAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Line Voltage Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low line (input) voltage alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowVoltageAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLoadCurrentAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Load Current Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low load (output) electrical current alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCurrentAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLoadVoltageAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Load Voltage Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low load (output) voltage alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowVoltageAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowMakeupWaterTankLevelAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Makeup Water Tank Level Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low makeup water tank level alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterLevelAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowMixedAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Mixed Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low mixed air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowMixedAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Mixed Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low mixed air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowOutsideAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Outside Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low outside air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowOutsideAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Outside Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low outside air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowPreheatCoilEnteringWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -67448,6 +70718,23 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowCoilEnteringWaterTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPreheatCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Preheat Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low air leaving the preheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -67591,6 +70878,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowReheatCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Reheat Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low air leaving the reheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowReheatCoilLeavingWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -67601,6 +70905,74 @@
     },
     "extends": [
       "dtmi:com:willowinc:LowCoilLeavingWaterTemperatureAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowReliefAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Relief Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low relief air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowReliefAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Relief Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low relief air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowReturnAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Return Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low return air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowReturnAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Return Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low return air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -67710,6 +71082,23 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low steam temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LowTertiaryLoopEnteringChilledWaterTemperatureAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -67812,6 +71201,159 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowUnderfloorAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Underfloor Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low underfloor air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowZoneAirHumidityAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Zone Air Humidity Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low zone air humidity alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirHumidityAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowZoneAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Zone Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low zone air temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MinOutsideAirHighAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "MinOutside Air High Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the minimum outside air high air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MinOutsideAirLowAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "MinOutside Air Low Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the minimum outside air low air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirHighAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air High Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the mixed air high air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedAirLowAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Air Low Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the mixed air low air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirHighAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air High Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the outside air high air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideAirLowAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Air Low Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the outside air low air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PeopleInferredOccupancySetpoint;1",
     "@type": "Interface",
     "displayName": {
@@ -67820,6 +71362,23 @@
     "extends": [
       "dtmi:com:willowinc:PeopleOccupancySetpoint;1",
       "dtmi:com:willowinc:InferredOccupancySetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:PreFilterDirtyFilterAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Pre-Filter Dirty Filter Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the dirty filter alarm for the pre filter"
+    },
+    "extends": [
+      "dtmi:com:willowinc:DirtyFilterAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -67922,6 +71481,74 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValvePositionActuatorCommandFeedbackMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefAirHighAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air High Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the relief air high air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefAirLowAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Air Low Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the relief air low air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirHighAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air High Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the return air high air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighAirFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnAirLowAirFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Air Low Air Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the return air low air flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowAirFlowAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -68357,6 +71984,40 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:DischargeFanHighSupplyStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Fan High Supply Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the discharge fan high supply static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:DischargeFanLowSuctionStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Discharge Fan Low Suction Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the discharge fan low suction static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:EnteringChilledWaterPumpRunActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -68455,6 +72116,40 @@
     "extends": [
       "dtmi:com:willowinc:HotWaterPumpVFDRunLevelActuator;1",
       "dtmi:com:willowinc:EnteringHotWaterPumpRunLevelActuator;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustFanHighSupplyStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Fan High Supply Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the exhaust fan high supply static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ExhaustFanLowSuctionStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Exhaust Fan Low Suction Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the exhaust fan low suction static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
@@ -68567,6 +72262,1077 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:HighBypassChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Bypass Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high bypass chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighBypassChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Bypass Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high chilled water bypass temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighBypassCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Bypass Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high bypass condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighBypassCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Bypass Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high condenser water bypass temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighBypassHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Bypass Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high bypass hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighBypassHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Bypass Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high hot water bypass temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighBypassSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Bypass Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high steam bypass temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighChilledWaterCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Chilled Water Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high the water entering the chilled water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighChilledWaterCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Chilled Water Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high air leaving the chilled water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCoolingCoilLeavingAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighChilledWaterCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Chilled Water Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high the water leaving the chilled water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCondenserWaterCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Condenser Water Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high the water entering the condenser water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCondenserWaterCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Condenser Water Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high air leaving the condenser water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCoolingCoilLeavingAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighCondenserWaterCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Condenser Water Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high the water leaving the condenser water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighDeltaChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Delta Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high chilled water delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighDeltaCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Delta Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high condenser water delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighDeltaHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Delta Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high hot water delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighDeltaSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Delta Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high steam delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighEnteringChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Entering Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering chilled water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighEnteringCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Entering Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering condenser water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighEnteringHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Entering Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering hot water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighEnteringSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Entering Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high steam entering temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHeaderChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Header Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high header chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHeaderChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Header Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high chilled water header temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHeaderCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Header Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high header condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHeaderCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Header Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high condenser water header temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHeaderHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Header Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high header hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHeaderHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Header Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high hot water header temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighHeaderSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Header Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high steam header temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLeavingChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Leaving Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving chilled water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLeavingCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Leaving Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving condenser water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLeavingHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Leaving Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving hot water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighLeavingSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Leaving Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high steam leaving temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPreheatCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Preheat Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high water entering the preheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPreheatCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Preheat Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high water leaving the preheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPrimaryLoopChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Primary Loop Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high primary loop chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPrimaryLoopCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Primary Loop Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high primary loop condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPrimaryLoopEnteringChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Primary Loop Entering Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering chilled water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPrimaryLoopEnteringCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Primary Loop Entering Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering condenser water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPrimaryLoopEnteringHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Primary Loop Entering Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering hot water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPrimaryLoopHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Primary Loop Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high primary loop hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPrimaryLoopLeavingChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Primary Loop Leaving Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving chilled water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPrimaryLoopLeavingCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Primary Loop Leaving Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving condenser water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighPrimaryLoopLeavingHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Primary Loop Leaving Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving hot water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighReheatCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Reheat Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high water entering the reheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighReheatCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Reheat Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high water leaving the reheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSecondaryLoopChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Secondary Loop Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high secondary loop chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSecondaryLoopCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Secondary Loop Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high secondary loop condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSecondaryLoopEnteringChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Secondary Loop Entering Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering chilled water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSecondaryLoopEnteringCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Secondary Loop Entering Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering condenser water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSecondaryLoopEnteringHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Secondary Loop Entering Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering hot water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSecondaryLoopHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Secondary Loop Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high secondary loop hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSecondaryLoopLeavingChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Secondary Loop Leaving Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving chilled water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSecondaryLoopLeavingCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Secondary Loop Leaving Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving condenser water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighSecondaryLoopLeavingHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Secondary Loop Leaving Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving hot water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTertiaryLoopChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Tertiary Loop Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high tertiary loop chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTertiaryLoopCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Tertiary Loop Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high tertiary loop condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTertiaryLoopEnteringChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Tertiary Loop Entering Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering chilled water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTertiaryLoopEnteringCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Tertiary Loop Entering Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering condenser water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTertiaryLoopEnteringHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Tertiary Loop Entering Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high entering hot water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTertiaryLoopHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Tertiary Loop Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the high tertiary loop hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTertiaryLoopLeavingChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Tertiary Loop Leaving Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving chilled water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTertiaryLoopLeavingCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Tertiary Loop Leaving Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving condenser water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:HighTertiaryLoopLeavingHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "High Tertiary Loop Leaving Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with high leaving hot water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:HighHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:LeavingChilledWaterPumpRunActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -68672,6 +73438,1148 @@
     ]
   },
   {
+    "@id": "dtmi:com:willowinc:LowBypassChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Bypass Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low bypass chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowBypassChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Bypass Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low chilled water bypass temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowBypassCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Bypass Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low bypass condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowBypassCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Bypass Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low condenser water bypass temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowBypassHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Bypass Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low bypass hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowBypassHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Bypass Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low hot water bypass temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowBypassSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Bypass Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low steam bypass temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowChilledWaterCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Chilled Water Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low the water entering the chilled water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowChilledWaterCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Chilled Water Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low air leaving the chilled water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowChilledWaterCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Chilled Water Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low the water leaving the chilled water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCondenserWaterCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Condenser Water Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low the water entering the condenser water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCondenserWaterCoilLeavingAirTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Condenser Water Coil Leaving Air Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low air leaving the condenser water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCoolingCoilLeavingAirTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowCondenserWaterCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Condenser Water Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low the water leaving the condenser water coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowDeltaChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Delta Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low chilled water delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1",
+      "dtmi:com:willowinc:LowDeltaWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowDeltaCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Delta Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low condenser water delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1",
+      "dtmi:com:willowinc:LowDeltaWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowDeltaHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Delta Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low hot water delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1",
+      "dtmi:com:willowinc:LowDeltaWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowDeltaSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Delta Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low steam delta temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowEnteringChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Entering Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering chilled water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowEnteringCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Entering Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering condenser water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowEnteringHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Entering Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering hot water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowEnteringSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Entering Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low steam entering temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHeaderChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Header Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low header chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHeaderChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Header Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low chilled water header temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHeaderCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Header Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low header condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHeaderCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Header Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low condenser water header temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHeaderHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Header Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low header hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHeaderHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Header Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low hot water header temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowHeaderSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Header Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low steam header temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLeavingChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Leaving Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving chilled water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLeavingCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Leaving Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving condenser water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLeavingHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Leaving Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving hot water temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowLeavingSteamTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Leaving Steam Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low steam leaving temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowSteamTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPreheatCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Preheat Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low water entering the preheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPreheatCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Preheat Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low water leaving the preheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPrimaryLoopChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Primary Loop Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low primary loop chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPrimaryLoopCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Primary Loop Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low primary loop condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPrimaryLoopEnteringChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Primary Loop Entering Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering chilled water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPrimaryLoopEnteringCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Primary Loop Entering Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering condenser water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPrimaryLoopEnteringHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Primary Loop Entering Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering hot water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPrimaryLoopHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Primary Loop Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low primary loop hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPrimaryLoopLeavingChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Primary Loop Leaving Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving chilled water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPrimaryLoopLeavingCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Primary Loop Leaving Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving condenser water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowPrimaryLoopLeavingHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Primary Loop Leaving Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving hot water primary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowReheatCoilEnteringWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Reheat Coil Entering Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low water entering the reheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowReheatCoilLeavingWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Reheat Coil Leaving Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low water leaving the reheat coil temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSecondaryLoopChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Secondary Loop Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low secondary loop chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSecondaryLoopCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Secondary Loop Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low secondary loop condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSecondaryLoopEnteringChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Secondary Loop Entering Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering chilled water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSecondaryLoopEnteringCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Secondary Loop Entering Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering condenser water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSecondaryLoopEnteringHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Secondary Loop Entering Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering hot water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSecondaryLoopHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Secondary Loop Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low secondary loop hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSecondaryLoopLeavingChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Secondary Loop Leaving Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving chilled water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSecondaryLoopLeavingCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Secondary Loop Leaving Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving condenser water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowSecondaryLoopLeavingHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Secondary Loop Leaving Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving hot water secondary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTertiaryLoopChilledWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Tertiary Loop Chilled Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low tertiary loop chilled water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTertiaryLoopCondenserWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Tertiary Loop Condenser Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low tertiary loop condenser water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTertiaryLoopEnteringChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Tertiary Loop Entering Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering chilled water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTertiaryLoopEnteringCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Tertiary Loop Entering Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering condenser water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTertiaryLoopEnteringHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Tertiary Loop Entering Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low entering hot water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTertiaryLoopHotWaterFlowAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Tertiary Loop Hot Water Flow Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the low tertiary loop hot water flow alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterFlowAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTertiaryLoopLeavingChilledWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Tertiary Loop Leaving Chilled Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving chilled water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowChilledWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTertiaryLoopLeavingCondenserWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Tertiary Loop Leaving Condenser Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving condenser water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowCondenserWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:LowTertiaryLoopLeavingHotWaterTemperatureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Low Tertiary Loop Leaving Hot Water Temperature Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the alarm associated with low leaving hot water tertiary loop temperature"
+    },
+    "extends": [
+      "dtmi:com:willowinc:LowHotWaterTemperatureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedFanHighSupplyStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Fan High Supply Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the mixed fan high supply static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:MixedFanLowSuctionStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Mixed Fan Low Suction Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the mixed fan low suction static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideFanHighSupplyStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Fan High Supply Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the outside fan high supply static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:OutsideFanLowSuctionStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Outside Fan Low Suction Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the outside fan low suction static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
     "@id": "dtmi:com:willowinc:PrimaryLoopEnteringChilledWaterValveOpenActuatorCommandStatusMismatchAlarmState;1",
     "@type": "Interface",
     "displayName": {
@@ -68767,6 +74675,74 @@
     },
     "extends": [
       "dtmi:com:willowinc:LeavingHotWaterValveOpenActuatorCommandStatusMismatchAlarmState;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefFanHighSupplyStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Fan High Supply Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the relief fan high supply static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReliefFanLowSuctionStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Relief Fan Low Suction Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the relief fan low suction static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnFanHighSupplyStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Fan High Supply Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the return fan high supply static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanHighSupplyStaticPressureAlarmSetpoint;1"
+    ],
+    "contents": [],
+    "@context": [
+      "dtmi:dtdl:context;3"
+    ]
+  },
+  {
+    "@id": "dtmi:com:willowinc:ReturnFanLowSuctionStaticPressureAlarmSetpoint;1",
+    "@type": "Interface",
+    "displayName": {
+      "en": "Return Fan Low Suction Static Pressure Alarm Setpoint"
+    },
+    "description": {
+      "en": "The setpoint that must be exceeded to trigger the return fan low suction static pressure alarm"
+    },
+    "extends": [
+      "dtmi:com:willowinc:FanLowSuctionStaticPressureAlarmSetpoint;1"
     ],
     "contents": [],
     "@context": [
